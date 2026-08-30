@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>24 GHz Doppler Radar Chronograph — Stout Design Engineering</title>
+<meta name="description" content="Designing a Doppler radar system to measure projectile velocity — RF component selection, ADC and antenna design, and PCB layout at 24 GHz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="/">Stout Design Engineering</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/projects/radar-chronograph.html">Radar Chronograph</a>
+      <a href="/projects/sailboat-project.html">Sailboat Project</a>
+      <a href="https://github.com/zstout96">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="eyebrow">Personal project</p>
+  <h1 class="page-title">24 GHz Doppler Radar Chronograph</h1>
+  <p class="page-dek">A self-directed RF engineering project: designing a Doppler radar system to measure projectile velocity, from RF component selection through PCB layout and antenna design.</p>
+
+  <div class="specs">
+    <span><strong>Band:</strong> 24 GHz</span>
+    <span><strong>Architecture:</strong> Doppler radar</span>
+    <span><strong>MCU:</strong> ESP32</span>
+    <span><strong>Status:</strong> Design complete, build paused</span>
+  </div>
+
+  <div class="image-row">
+    <figure>
+      <img src="../assets/images/radar-chronograph-hero.png" alt="CAD assembly render of the transceiver board and antenna board, showing the helical antenna coils mounted alongside the RF and microcontroller module">
+      <figcaption>Transceiver board (left) and antenna board with helical antenna elements (right)</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/images/radar-chronograph-hero-2.png" alt="CAD assembly render, opposite angle, showing the five helical antenna coils on their copper ground pads and the transceiver board edge-on">
+      <figcaption>Opposite angle, showing all five helical antenna elements on the antenna board</figcaption>
+    </figure>
+  </div>
+
+  <article>
+    <h2>Background</h2>
+    <p>While deployed, I saw a Garmin Xero being used to measure muzzle velocity and thought the concept was neat. I have a background in electrical engineering, so I decided to see whether I could design a Doppler radar chronograph of my own — out of personal curiosity, and as a way to challenge my RF engineering skills and push them into a higher-frequency range than I typically work in. RF hardware design of this kind isn't something I do in my day job; this project is entirely a personal build.</p>
+
+    <h2>Why Doppler Radar</h2>
+    <p>Measuring a bullet's velocity turns out to be a much simpler problem than radar design in general. There's no need to track a target or resolve range — the only thing that matters is extracting a speed value from a frequency shift. That meant a bare-bones Doppler radar architecture was all this system needed, rather than the more complex ranging or tracking radar systems used for other applications.</p>
+
+    <h2>Choosing the Operating Frequency and RF Components</h2>
+    <p>I researched how the Garmin Xero and similar commercial chronographs approached the problem, and with further research, settled on 24 GHz as the operating band. From there, I selected 24 GHz transmit and receive ICs from Analog Devices — a frequency and component choice that gave me a reliable, well-supported starting point for the RF front end.</p>
+
+    <div class="callout">Photo placeholder — RF front-end component photo or datasheet block diagram</div>
+
+    <h2>Working Backward From the Doppler Shift: ADC and Sample Rate</h2>
+    <p>With the RF front end chosen, the next design driver was the analog-to-digital conversion stage — and that starts with the physics of the problem. A projectile traveling around 3,000 feet per second, reflecting a 24 GHz signal, produces a specific Doppler shift. After the received signal is mixed down, the only frequency of interest is the resulting intermediate frequency — the gap between transmitted and received frequency — since that's what actually encodes velocity.</p>
+    <p>That calculation set the required sample rate for the ADC. ADC selection then had to satisfy two constraints simultaneously: fast enough sampling to resolve the expected Doppler frequency range, and compatibility with an ESP32 microcontroller, which I chose for system control since I was already familiar with it. Getting the analog and digital signal paths aligned — sample rate, ADC resolution, and microcontroller interface all agreeing with each other — was its own design exercise before any RF hardware work began.</p>
+
+    <div class="callout">Simulation/calculation placeholder — Doppler shift vs. projectile velocity chart, and the resulting IF/sample rate derivation</div>
+
+    <h2>RF Design: Impedance Matching and Antenna</h2>
+    <p>Once the signal chain was defined, the focus shifted to RF fundamentals. At 24 GHz, with the low output power available from the transceiver ICs, impedance matching in the transmit and receive paths becomes critical — even small mismatches translate directly into lost signal and reduced range. Getting this right meant careful attention to trace geometry and transmission line design through the RF paths.</p>
+    <p>Antenna design was the other major piece. The initial implementation is a hand-wound helical antenna. From the beginning, I architected the system with the antenna on its own separate board, deliberately decoupled from the transceiver electronics — which means antenna designs can be swapped and iterated on without touching the rest of the system. That separation is still how the design stands today.</p>
+    <p>More recently, I've been using OpenEMS to run electromagnetic simulations of patch antenna arrays as a next-generation antenna option — evaluating whether a patch array could outperform the helical design for this application.</p>
+
+    <div class="callout">Simulation placeholder — OpenEMS patch antenna array simulation results (radiation pattern, return loss, etc.)</div>
+
+    <h2>Transceiver Board Design</h2>
+    <p>The transceiver board is where most of the remaining design effort went: the microcontroller, transmitter and receiver front end, ADC, a USB-C port, and a battery connector, all integrated onto a single board. Component and material selection throughout this board required constantly balancing cost against performance — a tradeoff that took as much attention as the RF design itself, since every part choice had a real effect on both the bill of materials and the achievable performance.</p>
+
+    <div class="callout">Photo placeholder — transceiver board layout (PCB CAD screenshot or fabricated board photo)</div>
+
+    <h2>Current Status</h2>
+    <p>The project is currently paused due to time availability rather than any technical limitation. The PCB design and a software architecture block diagram are complete. Ongoing work, as time allows, is focused on the OpenEMS patch antenna simulation as a possible upgrade path for the antenna board.</p>
+
+    <h2>Takeaways</h2>
+    <ul>
+      <li>Reducing the problem to what's actually required (speed only, no tracking or ranging) simplified the entire architecture and kept the design tractable</li>
+      <li>ADC and sample rate selection should be derived directly from the physics of the signal you're measuring, not chosen arbitrarily</li>
+      <li>Separating the antenna onto its own board made it possible to iterate on antenna design independently of the rest of the system</li>
+      <li>Impedance matching and material properties matter more, not less, as frequency increases</li>
+      <li>Component selection is a continuous cost-versus-performance negotiation, not a one-time decision</li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <a href="https://github.com/zstout96">github.com/zstout96</a>
+</footer>
+
+</body>
+</html>
