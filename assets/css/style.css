@@ -198,3 +198,53 @@ figcaption {
   color: var(--ink-soft);
   font-size: 14px;
 }
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 28px;
+  font-size: 14.5px;
+}
+
+article th, article td {
+  text-align: left;
+  padding: 8px 14px 8px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+article th {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--ink-soft);
+}
+
+article td code, article p code, article li code {
+  font-family: 'ui-monospace', 'SF Mono', Consolas, monospace;
+  font-size: 0.9em;
+  background: #eeeae0;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.status-open { color: var(--copper); font-weight: 600; }
+.status-done { color: var(--pcb-green); font-weight: 600; }
+
+pre.diagram {
+  background: #fbf8f3;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 24px 0;
+}
+
+article h3 {
+  font-size: 17px;
+  margin: 28px 0 10px;
+}
