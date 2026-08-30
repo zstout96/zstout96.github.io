@@ -52,6 +52,14 @@
     <p>This is a custom energy monitor that installs inside the outdoor condenser unit of a residential 240 VAC split-phase HVAC system, measuring the compressor and the condenser fan motor as two independent channels and reporting to Home Assistant over WiFi. The goal isn't just a power reading — it's a diagnostic tool. Trending inrush current, run current, and power factor over a full cooling season is a way to catch bearing wear, capacitor drift, and refrigerant charge problems while they're still cheap to fix, instead of finding out when the unit fails on the hottest day of the year.</p>
     <p>It's a monitoring device only — no control authority over the contactor or thermostat, and LAN-only, with no internet exposure. The attic blower motor is explicitly out of scope for this revision; one subsystem gets fully closed out before the next one is touched.</p>
 
+    <h2>System Architecture</h2>
+    <p>The block diagram below is straight from the design files: 240 VAC comes in from the condenser circuit and splits three ways — into the current transformers, into the voltage-sensing divider, and into an isolated AC-DC supply. The metering IC handles current, voltage, and power calculations in hardware and hands the result to the ESP32 over SPI, which runs ESPHome and reports everything to Home Assistant over WiFi.</p>
+
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet2-blockdiagram.png" alt="Block diagram showing 240V AC input splitting into current transformers, voltage sensing, and an isolated power supply, feeding an ADE7953 power metering IC, which connects over I2C/SPI to an ESP32-WROOM-32UE running ESPHome and WiFi">
+      <figcaption>System block diagram, from the schematic set</figcaption>
+    </figure>
+
     <h2>Measurement Approach</h2>
     <p>Current is sensed with two split-core current transformers clamped around the compressor and fan conductors, each feeding a burden resistor and a matched anti-alias filter into a differential input pair on an Analog Devices ADE7953 metering IC. Voltage is sensed deliberately on the load side of the contactor rather than at the supply — that way the board sees the voltage actually delivered to the compressor, including any sag during inrush or drop across aging contactor contacts, both of which are useful diagnostic signals in their own right.</p>
 
@@ -115,6 +123,39 @@
       <tr><td>TCMT1109 ×3</td><td>Optocoupler isolation for energy pulse and interrupt outputs</td></tr>
       <tr><td>SCT-013-000 ×2</td><td>Split-core current transformers, 100 A : 50 mA</td></tr>
     </table>
+
+    <h2 class="schematic-gallery">Schematic Set</h2>
+    <p>The full schematic set, straight from the design files, for anyone who wants to see the actual circuits rather than a description of them. A few of the sheets still carry the working design notes and open questions from the process — left in deliberately, since that's a more honest picture of where the design actually stands than a cleaned-up version would be.</p>
+
+    <h3>Cover Sheet</h3>
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet1-cover.png" alt="Cover sheet of the AC Power Monitor schematic set, showing top and bottom board renders and the document index">
+      <figcaption>Sheet 1 — cover sheet, with top and bottom board renders</figcaption>
+    </figure>
+
+    <h3>Project Architecture</h3>
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet3-architecture.png" alt="Hierarchical sheet navigation diagram linking System Power Supply, Power Meter, and MCU sub-sheets">
+      <figcaption>Sheet 3 — hierarchical sheet navigation linking the System Power Supply, Power Meter, and MCU sub-sheets</figcaption>
+    </figure>
+
+    <h3>System Power Supply</h3>
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet4-powersupply.png" alt="System power supply schematic, showing the mains input, fuse, MOV, isolated AC-DC converter module, and 3.3V logic rail generation with a filter cutoff frequency calculation">
+      <figcaption>Sheet 4 — mains input, surge protection, and the isolated logic supply, with the filter cutoff calculation worked out directly on the sheet</figcaption>
+    </figure>
+
+    <h3>MCU</h3>
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet5-mcu.png" alt="MCU schematic showing the ESP32-WROOM-32UE, its strapping resistors, UART connector, reset and boot buttons, and a design note about a possible future SD card addition">
+      <figcaption>Sheet 5 — the ESP32-WROOM-32UE, UART header, and boot/reset circuitry</figcaption>
+    </figure>
+
+    <h3>Power Meter</h3>
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-sheet6-powermeter.png" alt="Power meter schematic showing the ADE7953 metering IC, voltage divider, current transformer inputs, and the three TCMT1109 optocouplers with a design note about isolation research">
+      <figcaption>Sheet 6 — the ADE7953 metering IC, voltage divider, and the optocoupler isolation stage</figcaption>
+    </figure>
   </article>
 </main>
 
