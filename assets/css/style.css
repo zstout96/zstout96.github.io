@@ -248,3 +248,21 @@ article h3 {
   font-size: 17px;
   margin: 28px 0 10px;
 }
+
+.schematic-figure {
+  margin: 28px -70px;
+}
+
+.schematic-figure img {
+  width: calc(100% + 140px);
+  max-width: none;
+}
+
+.schematic-gallery h3 {
+  margin-top: 40px;
+}
+
+@media (max-width: 620px) {
+  .schematic-figure { margin: 28px 0; }
+  .schematic-figure img { width: 100%; }
+}
