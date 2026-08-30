@@ -36,6 +36,17 @@
     <span><strong>Status:</strong> Pre-fabrication review</span>
   </div>
 
+  <div class="image-row">
+    <figure>
+      <img src="../assets/images/ac-power-monitor-top.png" alt="Top view render of the AC power monitor PCB, showing the ESP32 module, terminal blocks, power supply, and metering components">
+      <figcaption>Top view — ESP32 module, mains terminal blocks, and the metering front end</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/images/ac-power-monitor-bottom.png" alt="Bottom view render of the AC power monitor PCB, showing the microSD socket and a visible bare-copper isolation channel separating the mains and logic domains">
+      <figcaption>Bottom view — the bare channel cutting across the board is the isolation barrier separating the mains and logic domains</figcaption>
+    </figure>
+  </div>
+
   <article>
     <h2>Background</h2>
     <p>This is a custom energy monitor that installs inside the outdoor condenser unit of a residential 240 VAC split-phase HVAC system, measuring the compressor and the condenser fan motor as two independent channels and reporting to Home Assistant over WiFi. The goal isn't just a power reading — it's a diagnostic tool. Trending inrush current, run current, and power factor over a full cooling season is a way to catch bearing wear, capacitor drift, and refrigerant charge problems while they're still cheap to fix, instead of finding out when the unit fails on the hottest day of the year.</p>
