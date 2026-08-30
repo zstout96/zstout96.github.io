@@ -79,6 +79,14 @@
 
     <h2>Layout and Spacing Compliance</h2>
     <p>High-voltage spacing follows IPC-2221C, which calls for 2.5 mm minimum clearance for uncoated conductors at this voltage; the target for this board was 3–4 mm for margin, given it lives outdoors and condensation is a real risk. The isolation barrier itself checks out well — probing the layout with a stricter 10 mm rule than required turned up zero violations, meaning the actual copper-to-copper gap across the barrier is at least 10 mm everywhere except at the isolator packages themselves, which are governed by their own datasheet creepage figures.</p>
+
+    <figure class="schematic-figure">
+      <img src="../assets/images/ac-power-monitor-layout.png" alt="KiCad PCB layout view showing three separated domains: the mains power entry section with wide high-current traces at upper left, the ESP32 logic section at upper right, and the metering section with channel A and B current transformer inputs across the bottom, with visible copper-free gaps between domains">
+      <figcaption>PCB layout — the mains entry section (upper left, with the wide high-current pours), the logic domain around the ESP32 (upper right), and the metering front end with the two CT channels (bottom). The copper-free channels between them are the isolation barrier.</figcaption>
+    </figure>
+
+    <p>The domain separation is visible directly in the layout above: the mains pours and the wide traces feeding the power supply module stay in their own region, the metering front end with the two current-transformer channels occupies the lower section, and the logic side around the ESP32 sits well clear of both. The trace widths tell the same story — the heavy mains routing is sized for current and clearance, while the isolated SPI runs crossing to the metering IC are ordinary signal traces.</p>
+
     <p>Two spacings inside the mains domain itself came in under target — both around 2 mm against a 2.5–4 mm goal. Neither is a safety-barrier failure; they're functional mains-side spacings that need either a small layout nudge or a firm commitment to the conformal coating that was already planned for outdoor use, which brings them into compliance either way.</p>
 
     <h2>What the Design Review Found</h2>
