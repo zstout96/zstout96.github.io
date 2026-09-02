@@ -61,9 +61,9 @@
 A = π r²  with r = 2.85 mm  →  A = 25.5 mm²
 λ = 12.43 mm at 24.125 GHz
 
-σ ≈ 5.24 × 10⁻⁵ m² = −32.8 dBsm (flat base, idealized)</pre>
+σ ≈ 5.24 × 10⁻⁵ m² = −32.8 dBm<sup>2</sup> (flat base, idealized)</pre>
 
-    <p>Most 5.56 ammunition has a boat-tail base rather than a flat one, which drops the RCS further — I used a conservative design value of <strong>−38 dBsm</strong> to make sure the link budget wasn't flattered by an overly optimistic target. For reference, a nose-on aspect would be roughly −42 dBsm, so working the base aspect is worth 4–9 dB over other viewing angles, which is part of why the sensor geometry is arranged the way it is.</p>
+    <p>Most 5.56 ammunition has a boat-tail base rather than a flat one, which drops the RCS further — I used a conservative design value of <strong>−38 dBm<sup>2</sup></strong> to make sure the link budget wasn't flattered by an overly optimistic target. For reference, a nose-on aspect would be roughly −42 dBm<sup>2</sup>, so working the base aspect is worth 4–9 dB over other viewing angles, which is part of why the sensor geometry is arranged the way it is.</p>
 
     <h2>System Architecture</h2>
     <p>The RF chain is built around Analog Devices' 24 GHz ISM chipset: an ADF5901 transmitter generating the FMCW chirp, and an ADF5904 four-channel downconverter on receive. A MAX11043 16-bit sigma-delta ADC digitizes the downconverted signal, and an ESP32-S3 handles system control, FFT processing, and connectivity.</p>
@@ -115,7 +115,7 @@ A = π r²  with r = 2.85 mm  →  A = 25.5 mm²
       <tr><td>TX power</td><td>+7 dBm</td></tr>
       <tr><td>TX / RX array gain</td><td>+14.6 dBi each</td></tr>
       <tr><td>Free-space path loss (0.45 m)</td><td>−52.5 dB</td></tr>
-      <tr><td>Target RCS</td><td>−38 dBsm</td></tr>
+      <tr><td>Target RCS</td><td>−38 dBm<sup>2</sup></td></tr>
       <tr><td>Antenna / feedline losses</td><td>−6 to −8 dB (worst case)</td></tr>
       <tr><td><strong>Received power</strong></td><td><strong>≈ −77 dBm</strong></td></tr>
       <tr><td>Receiver noise floor</td><td>−94 dBm</td></tr>
