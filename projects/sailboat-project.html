@@ -61,22 +61,57 @@ footer.site a{color:var(--mute)}
 <main class="wrap">
   <p class="eyebrow">Personal project</p>
   <h1>16 ft Wooden Catamaran</h1>
-  <p class="spec"><strong>Length:</strong> 16 ft · <strong>Construction:</strong> stitch-and-glue okoume plywood / epoxy · <strong>Rig:</strong> Hobie 16 sails and rigging (sail no. 19716), self-built hollow wooden spar · <strong>Tools:</strong> Fusion 360 · <strong>Duration:</strong> Nov 2017 – Jul 2020 · <strong>Status:</strong> Completed June 2020; sailing since July 2020</p>
+  <p class="spec"><strong>Length:</strong> 16 ft · <strong>Construction:</strong> stitch-and-glue okoume plywood / epoxy · <strong>Rig:</strong> assembled from parts — a $200 scrap Hobie 16 supplied rudders, hardware and trailer; mast bought used in Texas; sails (no. 19716) used off a sailing forum; standing rigging and chainplates off eBay; boom self-built in wood · <strong>Weight:</strong> ~250–300 lb (estimated) · <strong>Cost:</strong> ~$4,200 · <strong>Tools:</strong> Fusion 360 · <strong>Duration:</strong> Nov 2017 – Jun 2020 (~10 months of working time) · <strong>Status:</strong> Completed June 2020; sailing since July 2020</p>
 
   <figure class="hero">
     <img src="../assets/images/sailboat-hero.jpg" alt="The finished catamaran sailing on open water, May 2021">
     <figcaption>Under way, May 2021</figcaption>
   </figure>
 
-<p>A self-directed design-and-build project: a 16-foot catamaran designed from scratch in plywood and epoxy, built around a second-hand Hobie 16 rig.</p>
+<p>A self-directed design-and-build project: a 16-foot catamaran adapted from a 20-foot design, built in okoume plywood and epoxy around a second-hand Hobie 16 rig.</p>
+<figure><img src="../assets/images/sailboat-hero.jpg" alt="The finished catamaran sailing on open water" loading="lazy"></figure>
 <h2>Background</h2>
-<p>The project ran from November 2017 to June 2020 — roughly thirty-one months from first sketches to a finished boat, the large majority of it evenings and weekends in a single-car garage.</p>
+<p>I wanted a catamaran for two reasons that pull in opposite directions. One is stability — a cat is a forgiving platform for people who aren't sailors, and I wanted something friends could get on without a briefing. The other is that I wanted to fly a hull. Sailing a catamaran hard enough to lift the windward hull clear of the water is the thing that makes them worth having, and it is the opposite of a stable ride.</p>
+<p>I had sailed a Hobie 16 that needed a lot of work, which is where the interest came from. The obvious move was to buy one. I looked at what was available and didn't like how any of it looked, which is not an engineering reason but is an honest one — this was a project I was going to spend years on, and I wanted to want to look at it.</p>
+<p>So I went looking for a way to build one instead, and found a construction method for a plywood catamaran built around a 20-foot hull. I wanted 16 feet. Adapting that design became the first engineering task of the project, before any material was bought.</p>
+<p>Boatbuilding is well outside my day-to-day engineering work. Most of what follows was learned from published sources, from a stack of books on boat design and wooden construction, and from getting it wrong the first time.</p>
+<h2>Adapting a 20 ft Design to 16 ft</h2>
+<p>Scaling a boat down is not a matter of multiplying every dimension by 0.8.</p>
+<p>I shortened the length and deliberately did not reduce the hull height. Cutting a hull's depth along with its length removes buoyancy fast, because displacement scales with all three dimensions at once, and a 16-foot cat carrying two or three people needs the volume. Keeping the section depth while shortening the boat gives up some slenderness in exchange for reserve buoyancy, which is the right trade on a boat that will be sailed with crew and will occasionally bury a bow.</p>
+<p>There was a second constraint pushing the same way, and it came from the material rather than the hydrostatics.</p>
+<p>Both sides of one hull have to come out of a single scarfed sheet — roughly 16 ft long by 4 ft wide once two 8 ft sheets are joined end to end. That gives about two feet of height for each hull side, with the mirrored panel nesting in the other half of the sheet. Any hull deeper than that needs a third sheet per hull, and at $70 a sheet plus $150 shipping, a third sheet is not a rounding error.</p>
+<p>So the hull depth was bounded above by the plywood and below by the buoyancy I wanted to keep. The design sits between those two.</p>
+<figure><img src="../assets/images/sailboat-panel-development.jpg" alt="Fusion 360 sketch of the developed hull side panel nested on the scarfed plywood sheet" loading="lazy"><figcaption>The developed hull side panel drawn against the actual sheet outline — stern at left, bow at right. Offset points cluster where the curvature changes fastest and open out through the straight middle.</figcaption></figure>
 <h2>Designing to a Fixed Rig</h2>
-<p>The single most consequential decision was made before any wood was cut: rather than design a sail plan, I bought an existing one. A used Hobie 16 rig — mast, boom, standing rigging, and a fully-battened mainsail carrying sail number 19716 — became the fixed constraint, and the platform was designed around it.</p>
-<p>That choice buys a great deal and costs something specific. What it buys is a sail plan that is already known to work: the Hobie 16 carries roughly 218 sq ft between main and jib on a 26 ft 6 in mast, a combination that has been sailed and refined for decades, so the aerodynamics need no validation. It also supplies mast, boom, rigging wire, and sail as a single second-hand purchase, at a fraction of what new equivalents would cost.</p>
-<p>What it costs is design freedom. Every load path is now dictated by hardware I did not design and cannot change — chainplate positions, mast step location, shroud angles, and the compression and righting-moment loads the rig imposes are all fixed inputs. The platform underneath has to accept them as given. In practice this inverted the usual design order: instead of sizing a rig to a hull, I was sizing hulls and crossbeams to a rig.</p>
-<p>Before committing to that, the rig was stepped in the backyard and the mainsail hoisted, to confirm the spar was straight, the rigging serviceable, and the actual dimensions matched what the platform was being drawn around.</p>
-<figure><img src="../assets/images/sailboat-rig-test.jpg" alt="Hobie 16 mast stepped in the backyard with the mainsail hoisted, sail number 19716" loading="lazy"><figcaption>Test-raising the salvaged rig, 10 Nov 2018 — verifying spar condition and dimensions before designing the platform to them</figcaption></figure>
+<p>The single most consequential decision was made before any wood was cut: rather than design a sail plan, I acquired an existing one.</p>
+<p>In October 2018 I bought a <strong>non-repairable Hobie 16 — with its trailer — for $200.</strong> The hulls were beyond saving. The mast was bent. The sails were tattered. There was no boom at all.</p>
+<p>That is not a boat purchase; it is a parts purchase. For $200 it delivered rudders, deck hardware, trampoline fittings, a road trailer, and — most importantly — a complete, proven set of rig dimensions to design around. A trailer alone, bought separately, would have cost several times that.</p>
+<figure><img src="../assets/images/sailboat-donor-hobie.jpg" alt="The donor Hobie 16 on its trailer in a field before stripping" loading="lazy"><figcaption>The donor boat, 26 Oct 2018 — bought non-repairable for $200 with its trailer, and stripped for its rig, foils, hardware and trailer</figcaption></figure>
+<h3>What had to be replaced</h3>
+<p>Buying a wreck means inheriting its faults, and two of them determined later work:</p>
+<ul>
+<li><strong>The mast was bent,</strong> so I bought a replacement off Craigslist in Galveston, Texas, and drove there and back from Madison, Mississippi in a single day.</li>
+<li><strong>There was no boom,</strong> which is why the boom on this boat is one I built. A wooden spar was not a stylistic flourish; it was the cheapest way to replace a missing part.</li>
+<li><strong>The sails were tattered,</strong> so a used set was bought off a sailing forum — the suit carrying number 19716 that the boat sails under today.</li>
+<li><strong>The standing rigging was not worth reusing,</strong> so the shrouds and forestay were bought off eBay, as were the chainplates.</li>
+</ul>
+<p>The replacement mast came with its masthead, so the top of the rig needed nothing further.</p>
+<p>So almost nothing in the finished rig came off the donor. The mast is from Texas, the sails from a forum, the wire from eBay, the boom from my own shop. What the $200 actually bought was the rudders, the hardware, the trailer, and the specification — a known-good set of dimensions and loads to design a platform around.</p>
+<p>That pattern is worth naming. Nothing in the rig was designed; everything was sourced against a known standard. The Hobie 16 has been in production long enough that its parts are a commodity market — a bent mast, a missing boom and dead wire are all solvable from second-hand listings, because thousands of the same boat exist. Designing to a mass-produced rig buys a supply chain, not just a sail plan.</p>
+<h3>What the fixed rig buys and costs</h3>
+<p>What it buys is a sail plan already known to work: the Hobie 16 carries roughly 218 sq ft between main and jib on a 26 ft 6 in mast, a combination sailed and refined for decades, so the aerodynamics need no validation.</p>
+<p>What it costs is design freedom. Every load path is now dictated by hardware I did not design and cannot change — chainplate positions, mast step location, shroud angles, and the compression and righting-moment loads the rig imposes are all fixed inputs. In practice this inverted the usual design order: instead of sizing a rig to a hull, I was sizing hulls and crossbeams to a rig.</p>
+<p>Before committing, the rig was stepped in the backyard and the mainsail hoisted, to confirm the spar was straight, the rigging serviceable, and the dimensions matched what the platform was being drawn around.</p>
+<figure><img src="../assets/images/sailboat-rig-test.jpg" alt="Hobie 16 mast stepped in the backyard with the mainsail hoisted, sail number 19716" loading="lazy"><figcaption>Rig assembled and test-raised, 10 Nov 2018 — used sails on the replacement mast, checking the spar was straight and the dimensions matched the drawing</figcaption></figure>
+<h3>Buying an old mast on purpose</h3>
+<p>The replacement mast is pre-1980 and entirely aluminum, and that was deliberate.</p>
+<p>Hobie later changed the 16's mast so the upper section is composite rather than aluminum, following incidents in which masts contacted overhead power lines. The safety case for that change is obvious. The durability consequence is that the top third of a later mast is a composite section living in full sun for its whole life, and UV is the one thing that reliably degrades it.</p>
+<p>An early all-aluminum spar has no such section. It is heavier and it conducts, but it does not care about sunlight. Knowing why a product changed lets you choose which version's tradeoffs you want.</p>
+<h2>Learning the Tools</h2>
+<p>Nothing in this project used a skill I already had.</p>
+<p>I learned 3D modelling and Fusion 360 for this boat. The hull panel development, the offset tables, the nesting check against sheet stock, the structural interfaces, the mast simulation, and a marquetry inlay pattern were all done in a package I did not know how to open in November 2017.</p>
+<p>The domain knowledge came the same way — a stack of books on boat design, wooden construction, and small-craft structure, read specifically because the project required them. Species selection came out of the wood characteristics tables in <em>Boatbuilding With Plywood</em>; the construction method came from published plans for a larger boat.</p>
+<p>That is worth stating plainly rather than hiding. The interesting question about an engineer is rarely what they already know. It is what happens when a project requires something they don't.</p>
 <h2>Materials Selection: Why Wood</h2>
 <p>Wood is an unusual choice to defend to an engineer, so it is worth showing the reasoning rather than asserting the conclusion. The relevant comparison is not strength but <strong>bending stiffness per unit weight</strong>, because a hull panel is a panel in bending, and on a small beachable catamaran weight is the dominant performance variable.</p>
 <p>Compared on panels of equal bending stiffness, plywood is extraordinarily competitive:</p>
@@ -120,7 +155,7 @@ footer.site a{color:var(--mute)}
 <td>2.29</td>
 </tr>
 <tr>
-<td><strong>3-ply Douglas fir</strong></td>
+<td><strong>5-ply Douglas fir</strong></td>
 <td><strong>0.21</strong></td>
 <td><strong>2.97</strong></td>
 </tr>
@@ -134,157 +169,287 @@ footer.site a{color:var(--mute)}
 <p class="tcap">Panels of equal bending stiffness, normalized to steel</p>
 <p>Plywood reaches 0.21 relative weight — beaten only by an aramid/foam sandwich at 0.19, and beating aluminum by better than a factor of two. The tradeoff is thickness: getting there requires a panel roughly three times as thick as the steel equivalent, which costs interior volume and adds wetted surface at the panel edges. On a boat with hulls this slender that was an acceptable price.</p>
 <p>The rest of the case is practical rather than analytical. Plywood and epoxy need no autoclave, no vacuum infusion, and no mold tooling; the entire structure can be built in a garage with clamps, a jigsaw, and a mixing pot. For a one-off with no production run to amortize tooling against, composite construction would have cost more in setup than the material savings would ever return.</p>
-<figure><img src="../assets/images/sailboat-stiffness-chart.jpg" alt="Panels of equal bending stiffness comparison chart" loading="lazy"><figcaption>The comparison that drove the material choice</figcaption></figure>
-<h2>Plywood Specification</h2>
-<p>The hull skins are gaboon (okoume) marine plywood, Lloyd's Register approved, manufactured by Compensato Toro S.p.A. The certification matters more than it might appear: marine-grade plywood is a claim anyone can print on a label, whereas Lloyd's approval requires a fully waterproof adhesive to a defined standard and a veneer grade with no interior voids. A void inside a laminate is invisible from the outside, becomes a water trap once the panel is drilled or the edge is opened, and is the usual first cause of delamination in a wooden hull.</p>
-<p>The epoxy is West System resin with 206 slow hardener. Hardener speed is a real decision rather than a default in this climate: in a Mississippi garage in summer, standard hardener can begin to gel in the pot before a large panel is wet out, and once that starts there is no recovering the batch. Slow hardener trades working time for cure time, which is the right trade when the panels are 16 ft long and the alternative is throwing away mixed epoxy.</p>
-<h3>Three-ply, equal layers</h3>
-<p>The hull skins are three-ply, with all three veneers the same thickness.</p>
-<p>Both parts of that specification do work. <strong>Equal layer thickness</strong> makes the panel balanced and symmetrical about its own centreline — the same amount of wood, running the same direction, at the same distance either side of the middle. An unbalanced layup moves as it takes up and gives off moisture, because the two faces respond differently and the panel cups toward the drier side. On a hull skin that is sheathed on one face and open to the inside of the hull on the other, that asymmetry in exposure is guaranteed, so the layup itself has to be symmetric or the panel will fight its own frames.</p>
-<p><strong>Three plies rather than five</strong> is a stiffness decision. In a three-ply panel the two outer veneers run the same direction and only the core runs across, so about two-thirds of the material lies along the face grain. In a five-ply panel of the same thickness, only three-fifths does, and more of the wood is oriented across the direction the panel is being asked to resist. Since bending stiffness depends on how far material sits from the neutral axis, and the outer layers are exactly the material furthest out, putting both faces along the length of the hull buys the most stiffness available at that thickness.</p>
-<p>The trade is directional. A three-ply panel is markedly stiffer and stronger along its face grain than across it, and it is more willing to split along the grain when bent hard the other way. That is an acceptable trade on a hull skin, where the loads and the curvature both run predominantly fore and aft.</p>
 <h3>Two materials, two jobs</h3>
-<p>Skin and structure have opposite requirements. A hull skin wants to be as light as possible while remaining stiff enough not to oil-can between frames; a structural member wants strength and the ability to hold a fastener under load. No single species is best at both, so the boat uses two.</p>
-<p>Species selection was worked from the wood characteristics tables in <em>Boatbuilding With Plywood</em>, which rate common boatbuilding timbers by weight, strength, glue-and-screw performance, and fastening ability:</p>
+<p>Skin and structure have opposite requirements. A hull skin wants to be as light as possible while remaining stiff enough not to oil-can between frames; a structural member wants strength and the ability to hold a fastener under load. No single species is best at both, so the boat uses several, each where it earns its weight:</p>
 <table>
 <thead>
 <tr>
-<th>Species</th>
-<th>Weight</th>
-<th>Strength</th>
-<th>Glue &amp; screw</th>
-<th>Fastening</th>
-<th>Notes</th>
+<th>Where</th>
+<th>Material</th>
+<th>Why</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Okoume</td>
-<td>Light</td>
-<td>Not strong</td>
-<td>Good</td>
-<td>Fair</td>
-<td>Suitable for light, small boats</td>
+<td>Hull skins</td>
+<td>Okoume marine plywood</td>
+<td>Light, thin, takes compound curvature</td>
 </tr>
 <tr>
-<td>Longleaf yellow pine</td>
-<td>Heavy</td>
-<td>Strong</td>
-<td>Good</td>
-<td>Good</td>
-<td>Comparable to Douglas fir</td>
+<td>Internal framing</td>
+<td>Douglas fir</td>
+<td>Available, good strength for weight</td>
+</tr>
+<tr>
+<td>Crossbeams and arch</td>
+<td>Douglas fir, laminated</td>
+<td>Stiffness per pound over a span</td>
+</tr>
+<tr>
+<td>Corner posts</td>
+<td>White oak</td>
+<td>Hard and tough; holds a bearing surface under a bolt</td>
+</tr>
+<tr>
+<td>Decks</td>
+<td>Cedar strip</td>
+<td>Follows tight curvature; appearance</td>
+</tr>
+<tr>
+<td>Pylons and receivers</td>
+<td>Aluminum tube</td>
+<td>Wear surface at a demountable joint</td>
 </tr>
 </tbody>
 </table>
-<p>Okoume goes where light and thin is the whole point — the hull skins. Longleaf yellow pine goes where load has to be carried and fasteners have to hold. It is the heavier material by a wide margin, but it appears in a small fraction of the total volume, so the weight penalty at the boat level is modest and the strength is bought where it actually matters.</p>
+<h2>Plywood Specification</h2>
+<p>The hull skins are gaboon (okoume) marine plywood, Lloyd's Register approved, manufactured by Compensato Toro S.p.A. The certification matters more than it might appear: marine-grade plywood is a claim anyone can print on a label, whereas Lloyd's approval requires a fully waterproof adhesive to a defined standard and a veneer grade with no interior voids. A void inside a laminate is invisible from the outside, becomes a water trap once the panel is drilled or the edge is opened, and is the usual first cause of delamination in a wooden hull.</p>
+<p>The epoxy is West System resin with 206 slow hardener. Hardener speed is a real decision rather than a default in this climate: in a Mississippi garage in summer, standard hardener can begin to gel in the pot before a large panel is wet out, and once that starts there is no recovering the batch. Slow hardener trades working time for cure time, which is the right trade when the panels are 16 ft long and the alternative is throwing away mixed epoxy.</p>
+<h3>Three-ply, equal layers</h3>
+<p>The hull skins were specified as 4 mm three-ply, with all three veneers the same thickness.</p>
+<p>Both parts of that specification do work. <strong>Equal layer thickness</strong> makes the panel balanced and symmetrical about its own centreline — the same amount of wood, running the same direction, at the same distance either side of the middle. An unbalanced layup moves as it takes up and gives off moisture, because the two faces respond differently and the panel cups toward the drier side.</p>
+<p><strong>Three plies rather than five</strong> is a stiffness decision. In a three-ply panel the two outer veneers run the same direction and only the core runs across, so about two-thirds of the material lies along the face grain. In a five-ply panel of the same thickness, only three-fifths does. Since bending stiffness depends on how far material sits from the neutral axis, and the outer layers are exactly the material furthest out, putting both faces along the length of the hull buys the most stiffness available at that thickness.</p>
+<p>The trade is directional. A three-ply panel is markedly stiffer and stronger along its face grain than across it, and it is more willing to split when bent hard the other way. That is an acceptable trade on a hull skin, where the loads and the curvature both run predominantly fore and aft.</p>
+<p>All of which assumes the plies are actually equal. On the first two hulls they were not, and that is the subject of the iteration section below.</p>
 <figure><img src="../assets/images/sailboat-ply-stamp.jpg" alt="Lloyd's Register certification stamp on the gaboon plywood" loading="lazy"><figcaption>Lloyd's Register approval stamp on the gaboon marine plywood</figcaption></figure>
 <h2>Panel Preparation: Scarf Joints</h2>
 <p>The hulls are 16 ft long. Plywood comes in 8 ft sheets. Every hull panel therefore had to be joined before it could be cut to shape, and the joint had to be as stiff as the panel around it — a butt strap would have created a hard spot exactly where the panel needs to bend fair.</p>
-<p>The solution is a scarf joint: both sheet ends are planed to a long feathered taper and bonded with epoxy, producing a glue line many times the panel thickness in length and a joint that flexes with the surrounding wood instead of resisting it.</p>
+<p>The solution is a scarf joint: both sheet ends are planed to a long feathered taper and bonded with epoxy, producing a glue line many times the panel thickness in length and a joint that flexes with the surrounding wood instead of resisting it. The tapers were cut with a scarfing tool rather than by hand.</p>
+<p>Where the scarfs land matters as much as how they are cut. Stagger them too close together and the panel has a locally thick, stiff region where two joints overlap. Space them too far apart and there is a band of panel that is all joint and no continuous face veneer — a weak line running across the sheet. Neither shows up until the panel is bent.</p>
 <p>Clamping pressure came from free weights laid along the joint. That sounds improvised, and it is, but the requirement is genuinely modest: an epoxy scarf needs even, light contact pressure, not the high clamping force a mechanical fastener joint would demand. Squeezing an epoxy joint too hard starves it of adhesive and makes it weaker, not stronger.</p>
 <figure><img src="../assets/images/sailboat-scarf.jpg" alt="Plywood panels scarfed and clamped under free weights" loading="lazy"><figcaption>Scarf joints under weight, Apr 2018 — light even pressure, not high clamping force</figcaption></figure>
-<p>The first thing built for the project was not part of the boat at all: a full-length, flat work table sized to take a joined 16 ft panel. Panels glued up on an unfair surface take the shape of the surface, so the table's flatness became the reference for everything downstream.</p>
-<h2>Lofting and Cutting</h2>
-<p>Hull panel shapes were marked out directly onto the joined sheets from a table of offsets, with battens sprung through the marked points to fair the curves before cutting.</p>
+<h2>Lofting and Panel Development</h2>
+<p>Hull panel shapes were developed from a table of offsets — a datum line with points marked above and below it at each station — worked out on paper and then rebuilt in Fusion 360.</p>
+<p>Station spacing is not uniform, and that is the point. Where the panel edge curves hard, points sit roughly every two inches; through the long middle where the curve is nearly straight, they open out to about a foot. Offsets are a sampling problem: you need enough points to define a curve, and sampling a straight line densely buys nothing. Concentrating resolution where the second derivative is large is the whole technique.</p>
+<p>Battens were sprung through the marked points to fair the curves before cutting, which is the analogue check no table of numbers gives you — a batten will not pass through a mistake.</p>
+<p>The CAD model also carried the actual plywood sheet outline, so the nested panel could be checked against real stock before anything was cut. At roughly $300 of plywood per hull delivered, confirming the shape fits on the sheet in software is the cheap version of finding out with a jigsaw.</p>
 <figure><img src="../assets/images/sailboat-panel-cut.jpg" alt="Hull side panel cut and held up for inspection" loading="lazy"><figcaption>A cut hull side panel, Apr 2018 — the sheer curve is visible along the top edge</figcaption></figure>
-<h2>Stitch-and-Glue Assembly</h2>
-<p>The hulls are assembled by the stitch-and-glue method: flat panels are drilled along their mating edges, laced together with wire, pulled up into three-dimensional shape, and then permanently bonded with thickened epoxy fillets and glass tape along the seams. Once the epoxy cures, the wire is redundant and can be cut out.</p>
+<h2>Stitch-and-Glue: Locking the Keel First</h2>
+<p>The construction method is a variant of what is generally called tortured ply: rather than building a hull over a mould, you cut flat panels to a developed shape, join them at the keel, and force the assembly into three dimensions. The shape comes from the panel geometry and the angle you open the keel to, not from a form.</p>
+<p>That makes the keel angle the master variable. Opening the keel wider at a station forces a harder bend into the panels there, so the angle set along the length determines where the material is worked hardest. On this hull the greatest bend is at the stern, where the sections are fullest; the bow is fine and needs comparatively little.</p>
+<p>The sequence matters more than it first appears, and it runs in an order that surprised me:</p>
+<ol>
+<li>Stitch the two panels together along the keel with copper wire</li>
+<li>Set the keel angle along the full length</li>
+<li>Fillet and glass the <strong>inside</strong> of the keel seam; let it cure</li>
+<li>Flip the assembly, cut out the copper stitches, sand the seam fair</li>
+<li>Glass the <strong>outside</strong> of the keel</li>
+<li>Gunwales glued on</li>
+</ol>
+<p>Only then is the hull bent to shape.</p>
 <p>Stitches were bent by hand from copper wire. Copper is soft enough to twist tight without work-hardening and snapping, and — unlike steel — anything left embedded in the laminate will not rust and stain through the finish later.</p>
 <figure><img src="../assets/images/sailboat-stitches.jpg" alt="Hand-bent copper wire stitches" loading="lazy"><figcaption>Hand-bent copper stitches, May 2018</figcaption></figure>
-<p>Ratchet straps did the heavy work of pulling the panels into shape; the stitches held the seam alignment once the strap took the load. Long edge glue-ups used a set of shop-built wooden screw clamps, made specifically for this project because the reach required was well beyond anything available off the shelf at a sane price for the number needed.</p>
-<figure><img src="../assets/images/sailboat-hull-assembly.jpg" alt="First hull pulled to shape with ratchet straps, epoxy fillet visible along the keel seam" loading="lazy"><figcaption>A hull taking shape, 15 Oct 2018 — ratchet straps holding the panels while the keel seam is filleted</figcaption></figure>
-<h3>Internal framing</h3>
-<p>The hulls are not bare stitched shells. Each carries a set of transverse frames at regular spacing with longitudinal members running through them, so the skin is not the sole source of stiffness — it works with a frame set that holds the section shape, spreads local loads, and gives the deck a landing all the way down the hull.</p>
-<p>This matters more on a catamaran than on a dinghy. A hull this slender has very little inherent resistance to being squeezed out of section, and every load the rig and beams impose eventually arrives at the hull as a point load. Frames turn those point loads into something the skin can carry.</p>
-<p>The bays between frames in both hulls carry rigid foam, adding buoyancy that does not depend on the hull staying watertight. On a boat that will eventually be capsized — and every beach cat is, sooner or later — reserve buoyancy built into the structure is the difference between a boat you right and sail home and a boat you swim away from.</p>
-<figure><img src="../assets/images/sailboat-hull-lift.jpg" alt="A complete bare hull held at arm's length by one person" loading="lazy"><figcaption>A finished bare hull, 29 Dec 2018 — light enough for one person to lift unaided, with the internal frame set visible before decking</figcaption></figure>
-<h2>Decking: Bending Plywood It Doesn't Want to Bend</h2>
-<p>The deck is cambered, and the panel had to take that curve in two directions at once near the ends. Dry plywood pushed to a tight radius does one of two things, and both are failures: it cracks the outer veneer along the grain, or it takes the bend and then spends the rest of its life trying to spring back out of the joint.</p>
-<p>The fix is water. Plywood wet through becomes markedly more pliable, accepts a tighter radius without cracking, and — once it dries clamped in position — holds a good deal of the new shape rather than fighting the fasteners. So the panel was hosed down and covered with wet towels to keep it soaked while it went on.</p>
-<p>Clamping came from ratchet straps spaced roughly a foot apart down the whole hull, which pull evenly and can be re-tensioned as the wood relaxes. The whole operation happened in the driveway rather than the garage, for the simple reason that it involves soaking a 16 ft panel with a garden hose, and it needed three people: two easing the panel down onto the sheer while a third ran the straps.</p>
-<figure><img src="../assets/images/sailboat-decking.jpg" alt="Deck panel being wet-bent onto the first hull under ratchet straps" loading="lazy"><figcaption>Wet-bending a deck, 18 Dec 2018 — wet towels keeping the panel pliable, straps at roughly one-foot spacing</figcaption></figure>
-<figure><img src="../assets/images/sailboat-deck-camber.jpg" alt="End-on view of the completed deck camber" loading="lazy"><figcaption>Deck camber, 20 Dec 2018</figcaption></figure>
+<p>Glassing the keel before forming has a consequence worth naming. Once that seam is cured both sides, the spine of the hull is rigid and the keel angle is no longer negotiable. Every bit of strain the forming operation demands has to be absorbed by the panel between keel and sheer. Nothing can relieve itself by opening slightly at the centreline. The wood either takes it or it fails.</p>
+<figure><img src="../assets/images/sailboat-hull-assembly.jpg" alt="First hull pulled to shape with ratchet straps, epoxy fillet visible along the keel seam" loading="lazy"><figcaption>A hull taking shape, 15 Oct 2018 — panels stitched and the keel seam filleted</figcaption></figure>
+<h2>Forming the Hulls</h2>
+<p>With the keel locked, the hull has to be persuaded from a flat-ish stitched assembly into its finished section. The photographs make the magnitude clear better than any description: a flat sheet ends up wrapped into something close to a closed circle.</p>
+<figure><img src="../assets/images/sailboat-deck-camber.jpg" alt="Looking into the open stern of a formed hull, the panel wrapped almost into a full circle" loading="lazy"><figcaption>The formed section, looking into the open stern — a flat panel wrapped nearly closed. The strap is holding the hull in the table, not forming it.</figcaption></figure>
+<h3>The first attempt, and what it taught</h3>
+<p>The first hull was formed with cold water from a garden hose. Everything I had read said the bend would be difficult but that the plywood would take it, so the panel was wetted down and the straps drawn in.</p>
+<p>It did not get halfway before it let go. The failure was sudden and complete — not a crack to be repaired but a hull that was finished as a structure. An attempt was made to save it by building a form for it to close onto. That failed too, and the hull was scrapped.</p>
+<h3>The method that worked</h3>
+<p>The process that eventually worked uses heat and moisture together, and both parts are necessary:</p>
+<ol>
+<li>Cam straps fitted along the full length at roughly one-foot spacing</li>
+<li>Hull turned upside down</li>
+<li>Covered in towels</li>
+<li><strong>Boiling water poured over it,</strong> repeatedly</li>
+<li>Straps drawn in progressively, measuring as the section closes</li>
+<li>Towels off, hull flipped upright and lowered into the work table</li>
+<li>Straps released — the table now holds the shape</li>
+</ol>
+<p>Wood's stiffness comes largely from lignin in the cell walls. Lignin softens with heat, but the temperature at which it begins to yield drops substantially once the wood is wet. Heat and moisture together let the cell walls deform plastically instead of fracturing. This is the mechanism of steam bending, delivered with a kettle and a pile of laundry instead of a steam box.</p>
+<p>The towels are not incidental. They hold a reservoir of water against the panel so it stays saturated, and they insulate it so it stays hot between pours. A bare panel splashed with hot water is cool and drying within a minute.</p>
+<p>Strap spacing is the other half of it. A few widely spaced straps pull the hull in at isolated points, and each of those points is a local strain concentration — a hard spot, and hard spots are where cracks start. Straps at one-foot intervals turn a set of point loads into something much closer to a distributed one.</p>
+<figure><img src="../assets/images/sailboat-forming-towels.jpg" alt="A hull under towels with cam straps and clamps during forming" loading="lazy"><figcaption>Forming a hull, 18 Dec 2018 — towels holding boiling water against the panel</figcaption></figure>
+<figure><img src="../assets/images/sailboat-hull-forming.jpg" alt="The full-length hull inverted on the driveway under fifteen evenly spaced cam straps" loading="lazy"><figcaption>The same hull, inverted on the driveway — the strap spacing that turns point loads into a distributed one</figcaption></figure>
+<figure><img src="../assets/images/sailboat-third-hull-forming.jpg" alt="The third hull mid-forming, wrapped in wet towels and steaming" loading="lazy"><figcaption>The third hull forming, 7 May 2019 — the equal-ply stock, still steaming, came to shape in about an hour</figcaption></figure>
+<h3>The work table</h3>
+<p>The shape is not held by the straps. It is held by a full-length work table with the hull's deck outline cut into it, built before the first hull was even attempted.</p>
+<p>The hull is lowered into that opening, and the table edge holds the sheer line at the correct plan shape at every station along the length. One piece of tooling gives correct beam, a fair sheer over sixteen feet, and an open interior to work in — and because the opening is the deck outline, anything formed in it will match the deck cut to the same shape.</p>
+<p>Straps visible in the table photographs are doing nothing structural. They are stopping a hull falling out of a hole.</p>
+<p>Once in the table, permanent cross members go in — straight members pulling the gunwales together at roughly one-foot spacing. With those bonded, the hull holds its own shape and the table has done its job.</p>
+<h2>The Iteration Story: Three Hulls</h2>
+<p>The specification was correct. The material was not.</p>
+<h3>What arrived</h3>
+<p>The skins were ordered as 4 mm three-ply okoume with three equal plies. What the first supplier delivered was 4 mm three-ply okoume in which the core made up roughly 60% of the thickness and the two face veneers about 20% each.</p>
+<p>Nominally the same product. Structurally a different panel — and there is no way to see it from the face of a sheet.</p>
+<h3>Why the ratio matters more than the thickness</h3>
+<p>Surface strain in a bent panel is set by thickness and bend radius alone, so both layups strained their outer faces identically. The difference is where the weak material sits.</p>
+<p>In three-ply construction the core runs across the grain, and wood loaded across the grain fails at a small fraction of the strain it tolerates along the grain — a difference of more than an order of magnitude. The core is therefore the panel's weakest material in a bend, and how much trouble it causes depends on how far from the neutral axis it extends, because strain grows linearly with distance from that axis.</p>
+<p>In a 4 mm equal layup the core spans roughly ±0.67 mm about the centre. In the 60/20/20 stock it spans ±1.2 mm. At the same bend radius, the cross-grain core in the delivered material saw close to <strong>twice the strain</strong> — and it was the material least able to take it.</p>
+<p>The failure follows from there. The core cracks internally first. Once it has split, the two face veneers are no longer shear-connected through the middle, so the panel stops behaving as a single stiff section and becomes two thin skins working independently.</p>
+<h3>The cost, in hours</h3>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Time to form a hull</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60/20/20 layup (first supplier)</td>
+<td>~10 hours</td>
+</tr>
+<tr>
+<td>Equal three-ply (second supplier)</td>
+<td>~1 hour</td>
+</tr>
+</tbody>
+</table>
+<p>Same nominal thickness, same species, same radius, same technique.</p>
+<h3>The three attempts</h3>
+<p><strong>Hull one</strong> cracked during forming and was scrapped.</p>
+<p><strong>Hull two</strong> was built from the same stock, had the same problem, and was coaxed into shape over about ten hours rather than discarded.</p>
+<p><strong>Hull three</strong> was built from a second supplier's plywood with genuinely equal plies. It came to shape in a single cycle of about an hour — fast enough to be startling after the previous experience. We had braced for another full day of fighting it and instead bent it into a straw.</p>
+<p>That third hull is what confirmed the diagnosis. Until then the ply ratio was a hypothesis; the one-hour bend made it a conclusion. All the reading that said the bend would be difficult but manageable had been accurate — it was describing plywood I did not have.</p>
+<h3>The boat carries one of each</h3>
+<p>The finished boat is hulls two and three.</p>
+<p>The two hulls are therefore not the same laminate. Port and starboard have different ply ratios, different bending histories, and one of them has an oversized cross-grain core that was worked hard to get it to shape. It has held up in service, but it is the part of the structure I would inspect first.</p>
+<figure><img src="../assets/images/sailboat-deck-crack.jpg" alt="Cracking in the hull skin alongside a glass-taped seam" loading="lazy"><figcaption>Hull two, 2 Feb 2019 — splits opening in the skin immediately alongside a stiff glassed seam, three weeks after forming</figcaption></figure>
+<p>The location is worth noting. The cracks run out from a glass-taped edge, and taped seams do not bend. The panel immediately beside one has to absorb the curvature the tape refuses, which makes that line a stiffness discontinuity and therefore a strain concentration — the same category of problem as a widely spaced strap, arriving from the opposite direction.</p>
+<h2>Internal Structure</h2>
+<p>The hulls are not bare stitched shells. Each carries permanent transverse cross members at roughly one-foot spacing, tying the gunwales together and holding the section, with the internal framing in Douglas fir.</p>
+<p>Beyond that, bulkheads were built from rigid XPS foam board coated in epoxy, adding stiffness and reserve buoyancy that does not depend on the hull staying watertight. On a boat that will eventually be capsized — and every beach cat is, sooner or later — buoyancy built into the structure is the difference between a boat you right and sail home and a boat you swim away from.</p>
+<p><strong>In retrospect this is the part I would change.</strong> Epoxy over bare foam produces a hard skin with no fibre in it. It resists dings and it seals, but structurally it is not doing much: the stiffness of a foam-cored panel comes from its skins, and a neat epoxy coating is a poor skin. Either glass both faces and get a genuine sandwich, or use a different approach entirely.</p>
+<p>What I would build instead is a light lattice of ¾ in Douglas fir — sticks in tension and compression carrying load into the hull skin, in a material with properties I can look up, for comparable weight.</p>
+<figure><img src="../assets/images/sailboat-internal-structure.jpg" alt="Inside a hull showing the aluminum receiver tube boxed into wooden framing between purple foam bulkheads" loading="lazy"><figcaption>Inside a hull — the aluminum receiver boxed into its framing, with XPS foam bulkheads between the frames</figcaption></figure>
+<figure><img src="../assets/images/sailboat-hull-lift.jpg" alt="A complete bare hull held at arm's length by one person" loading="lazy"><figcaption>A finished bare hull, 29 Dec 2018 — light enough for one person to lift unaided</figcaption></figure>
 <h2>Sheathing</h2>
-<p>Once the hulls were closed out, both were turned upside down and sheathed in fiberglass cloth wetted out with epoxy over the entire exterior, rather than only taping the seams.</p>
-<p>Full sheathing costs weight and a great deal of sanding, and it is genuinely optional — plenty of stitch-and-glue boats get by with taped joints and a coating of neat epoxy. The argument for doing the whole hull is abrasion and water. This is a beach-launched boat that will be dragged onto sand and ramps, and the loads that damage a plywood hull in service are rarely the sailing loads; they are the grounding, the trailer bunk, the dropped anchor. A glass skin takes that damage in a material that does not care about it, and it puts a continuous water barrier over every panel, every seam, and every end grain at once.</p>
-<p>The hulls carry 6 oz cloth; the cedar-strip decks carry 4 oz.</p>
-<p>Using two weights is a deliberate split rather than a leftover. The hulls are what gets dragged up ramps, set down on trailer bunks, and grounded on whatever is under the water at a launch site, so the skin there is chosen for abrasion and puncture resistance and 6 oz buys that. The decks see feet and gear, not gravel — and they are the surface people look at. Lighter 4 oz cloth wets out clearer, drapes more easily over the curvature of strip planking without bridging, and adds less weight high up, which on a catamaran costs righting moment at a poor lever arm.</p>
-<figure><img src="../assets/images/sailboat-sheathing.jpg" alt="Hull inverted and sheathed in glass cloth wetted out with epoxy" loading="lazy"><figcaption>Sheathing the hull, 3 Feb 2019</figcaption></figure>
+<p>Once formed and framed, the hulls were turned upside down and sheathed in fiberglass cloth wetted out with epoxy over the entire exterior, rather than only taping the seams. This happened <strong>before</strong> the frame was built and long before the decks went on — the hulls were sealed and protected through everything that followed.</p>
+<p>Full sheathing costs weight and a great deal of sanding, and it is genuinely optional. The argument for doing the whole hull is abrasion and water. This is a beach-launched boat that will be dragged onto sand and ramps, and the loads that damage a plywood hull in service are rarely the sailing loads; they are the grounding, the trailer bunk, the dropped anchor. A glass skin takes that damage in a material that does not care about it, and it puts a continuous water barrier over every panel, every seam, and every end grain at once.</p>
+<p>The hulls carry 6 oz cloth; the decks later carried 4 oz. Using two weights is a deliberate split. The hulls are what gets dragged up ramps and grounded on whatever is under the water at a launch site, so the skin there is chosen for abrasion resistance. The decks see feet and gear — and they are the surface people look at. Lighter 4 oz cloth wets out clearer, drapes more easily over strip planking without bridging, and adds less weight high up, which on a catamaran costs righting moment at a poor lever arm.</p>
+<figure><img src="../assets/images/sailboat-sheathing.jpg" alt="Hull inverted and sheathed in glass cloth wetted out with epoxy" loading="lazy"><figcaption>Sheathing a hull, 3 Feb 2019</figcaption></figure>
+<h2>The Platform</h2>
+<p>The frame is the part of this boat with no plan behind it. It is entirely my own design.</p>
+<p>Most plywood catamaran designs mount the crossbeams flush — the beams sit directly on the hull decks, and the crew rides low and close to the water. I did not want that. The Hobie 16 carries its platform raised well above the hulls, and that is the boat I liked. Choosing a raised platform meant every load path underneath it had to be worked out from scratch, because there was nothing to copy.</p>
+<h3>Materials, by job</h3>
+<p>The platform is a rectangle: two crossbeams athwartships between the hulls, two straight rails fore and aft, with the trampoline laced inside the frame.</p>
+<p><strong>Douglas fir</strong> makes the beams and rails — good stiffness per pound over a span. <strong>White oak</strong> makes the four corner posts, where a large hole is bored through to take an aluminum sleeve that drops over the hull pylon. That corner is doing bearing work: a bolt and a tube loading wood across its grain, repeatedly, for years. Oak is hard and tough enough to hold a bearing surface where fir would crush.</p>
+<p>The members meet at the corners in a castle joint — an interlocking joint in the Japanese joinery tradition that locks the members together in all directions rather than relying on fasteners to carry the geometry.</p>
+<h3>The forward arch</h3>
+<p>The forward crossbeam is an arch, not a straight beam, because it carries the mast.</p>
+<p>It is a laminated member: four boards of Douglas fir bent over a purpose-built jig and epoxied in pairs, then the trampoline channel routed, the depth hand-fitted, the whole thing dry-clamped and tested, and only then glued as a set. Laminating rather than sawing the curve out of solid stock keeps the grain running continuously around the arch instead of cutting across it at the ends, which is where a sawn curve fails.</p>
+<h3>The tie rod</h3>
+<p>An arch under a central load pushes its feet apart. Left unresisted, that thrust has to be taken by the corner joints and ultimately the pylons, loading them sideways in exactly the direction they are worst at.</p>
+<p>So the arch has a stainless steel cable running across its base from foot to foot. The cable takes the spreading force in pure tension, converting the arch from something that shoves outward on everything it touches into a self-contained unit that carries its load straight down. The Hobie uses a solid steel rod for the same job; cable was cheaper, lighter, and tensionable.</p>
+<p>The mast post carries a steel rod through the crossbeam, and the cable runs through the base of it. Tensioning the cable therefore does two jobs at once: it preloads the arch so it is not waiting for the rig to load it before the tie comes tight, and it pulls the mast post up into the beam. The mast is clamped into its seat by the same tension that stops the arch spreading.</p>
+<p>This is the tie beam, which has been holding up roofs for several centuries. It was satisfying to arrive at it from the load path rather than from having seen one.</p>
+<h3>Trampoline attachment</h3>
+<p>The trampoline is a Hobie 16 tramp, and it laces into a channel routed along the inboard edge of the beams, sized to take its bolt rope. Designing to accept a mass-produced part means the tramp can be replaced from stock for the life of the boat rather than being a bespoke item to remake. Channel depth was tested before committing: too shallow and the rope pulls out under load, which on a trampoline carrying three people is not a cosmetic failure.</p>
+<p>I misrouted one section. Rather than rebuild the beam, the bad length was cut out and a new piece epoxied in — a repair that is visible if you know to look for it, and which saved a laminated member that had taken a day to make.</p>
+<p>One front corner does not line up with the arch as cleanly as I would like. It is cosmetic and it is structurally sound, but I know exactly where it is.</p>
+<figure><img src="../assets/images/sailboat-corner-boring.jpg" alt="A white oak corner post being bored for its aluminum pylon sleeve" loading="lazy"><figcaption>Boring a corner post, 8 Aug 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-beam-lamination.jpg" alt="The laminated arch clamped over its jig during glue-up" loading="lazy"><figcaption>Laminating a beam over the jig, 9 Aug 2019 — four boards of Douglas fir, glued in pairs</figcaption></figure>
+<figure><img src="../assets/images/sailboat-corner-joint.jpg" alt="The half-lap corner joint seated on its hardwood post block" loading="lazy"><figcaption>Corner joint, 14 Aug 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-bare-frame.jpg" alt="The bare platform frame on the driveway showing the arch and corner joints" loading="lazy"><figcaption>The bare frame — forward arch, straight side rails, castle joints at four corners</figcaption></figure>
+<figure><img src="../assets/images/sailboat-frame-assembly.jpg" alt="The complete frame dry-assembled on the driveway" loading="lazy"><figcaption>The platform dry-assembled, 16 Aug 2019 — camber visible across the near beam</figcaption></figure>
+<figure><img src="../assets/images/sailboat-corner-fittings.jpg" alt="The four hardwood corner fittings, each slotted for a beam end and bored for an aluminum pylon" loading="lazy"><figcaption>Four identical corner fittings, 8 Aug 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-tramp-track.jpg" alt="Detail of the trampoline bolt rope laced into the routed channel" loading="lazy"><figcaption>The routed channel and lacing — depth tested before committing, so the rope cannot pull out under load</figcaption></figure>
+<figure><img src="../assets/images/sailboat-trampoline.jpg" alt="The trampoline laced taut into the finished frame" loading="lazy"><figcaption>Trampoline laced and tensioned, 15 Aug 2019</figcaption></figure>
+<h2>Structural Interfaces: Getting Load Into the Hulls</h2>
+<p>The platform connects to the hulls through four aluminum pylons, each dropping into a receiver built into the hull structure. That makes the boat demountable — the beams lift off, which matters for a trailered boat assembled at the ramp and stored in a garage that has to be emptied to work in.</p>
+<h3>Aligning by assembly rather than measurement</h3>
+<p>The pylons were not fitted to the hulls and then hoped to match the frame. The order was the reverse.</p>
+<p>Pylons were placed loose in the hulls, unsecured. The frame was then built around them, and set down onto them to establish the true positions and angles. Only once everything sat correctly were the pylons locked in.</p>
+<p>That makes the frame the alignment jig for its own mountings. Given that each hull is a separately built wooden object, with its own forming history and its own tolerances, this is the only approach that gets four pylons to line up with four receivers reliably. Measuring each hull independently and trusting the numbers to agree would have been optimistic.</p>
+<p>The pylons were bonded in with epoxy after scuffing the aluminum thoroughly. That surface prep is doing all the work: epoxy has no chemistry with aluminum oxide, so the entire strength of the joint is mechanical key. It is also a joint that gets sealed under a deck and can never be inspected or repaired, which raises the stakes on getting it right the first time.</p>
+<h3>Spreading the reaction</h3>
+<p>Inside the hull, the receiver is not simply a tube let into the deck. It stands vertically through the structure and is boxed in by framing tying it to the transverse members around it.</p>
+<p>That boxing is the whole point. A socket set into a plywood deck with nothing around it concentrates the entire beam reaction into a small ring of plywood end grain, which is the standard way to eventually drive a fitting down through a hull. Framing the receiver into the surrounding structure turns a point load into a distributed one before the skin ever sees it.</p>
+<p>Using hardwood as the adapter between a wooden beam and an aluminum pylon is worth defending, because the instinct is that a load path like this should be a machined metal fitting. The case for wood is that it needs no welding equipment, it can be shaped with tools already in the shop, it will not gall against aluminum the way steel can, and it is compliant enough to spread a bearing load rather than concentrate it at a hard edge. The case against it is creep under sustained load and a bearing surface that can crush over time.</p>
+<p>The complete load path runs: sail loads into the mast, mast into the step on the arch, along the arch to the corner, through the castle joint into the oak post, down the aluminum pylon into the receiver, out through the boxed framing into the hull structure and skin. Every transition in that chain is a place where load can concentrate, and every one of them is detailed to spread it instead.</p>
+<figure><img src="../assets/images/sailboat-receiver-install.jpg" alt="The pylon receiver tube framed into the hull structure" loading="lazy"><figcaption>Receiver boxed into the hull framing, 27 Nov 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-pylon-fitting.jpg" alt="Hardwood block bored for two aluminum pylon tubes" loading="lazy"><figcaption>Pylon and hardwood fitting, 9 May 2019</figcaption></figure>
+<h2>First Assembly</h2>
+<p>On 1 September 2019 the boat went together for the first time: both hulls, both beams seated on their pylons, trampoline laced and tensioned between them.</p>
+<p>A first full assembly is a genuine engineering milestone rather than just a photograph. Every part until then had been checked against a drawing or a mockup; this is the first time all of them were checked against each other. Fit errors a drawing will happily tolerate — a pylon a few degrees off vertical, beams that do not sit parallel, a trampoline cut to a frame that turns out not to be square — only appear here.</p>
+<p>It went together. That is the return on building the frame around loose pylons rather than measuring each hull and trusting the numbers to agree.</p>
+<figure><img src="../assets/images/sailboat-first-assembly.jpg" alt="The complete boat assembled on the lawn for the first time" loading="lazy"><figcaption>First full assembly, 1 Sep 2019 — hulls still open, frames and foam visible</figcaption></figure>
+<p>Worth noting from the photograph: the hulls are still open at this point. The decks would not go on for another five months, because everything that needed access to the inside of a hull had to be finished first.</p>
+<h2>Locating the Shroud Anchors</h2>
+<p>With the hulls formed and the frame built, the rig had to be stood on the actual boat to find where the shroud anchors belong. This is why the hulls stayed open so long: the anchors need backing structure bonded inside, and once a deck is on, the inside of that hull is closed forever.</p>
+<h3>Forestay first</h3>
+<p>The bow anchors were made before anything was raised. A bolt was coated in petroleum jelly as a release agent, a lag screw was set in place, and thickened epoxy was poured into a cavity in the bow and cured around it — producing an embedded fitting bonded into the structure rather than a bolt through a thin skin.</p>
+<p>The epoxy was thickened to a consistency I would describe as ketchup rather than mayonnaise: thick enough to stay where it is put, thin enough to self-level and release trapped air. Mixed stiffer than that and you cure bubbles into a fitting that is supposed to be solid.</p>
+<h3>Then measure with the real parts</h3>
+<p>I had worked out roughly where the shroud anchors should land from shroud length, mast height, and geometry. That gives an answer, but not one worth drilling on.</p>
+<p>So with the forestay anchors cured and holding, the mast was raised on the assembled boat — stayed temporarily with rope to the aft corners of the frame — and the shrouds pulled down to where they actually wanted to sit. Those positions were marked, Douglas fir blocks roughly 2×4 in section were bonded inside the hulls behind each, and the chainplates bolted through. The chainplates are plain plates: three bolts into the structure, one for the shroud.</p>
+<p>Those blocks are not optional. Three bolts trying to pull through 4 mm plywood would tear out — the skin is thinner than the bolt diameter. The block spreads that load over a much larger area and gives the bolts real depth of material to bear against.</p>
+<p>The geometry is calculable; where the wire lands relative to structure that exists is not. Whether the anchor falls on a frame you can bolt through or a bay you cannot, whether it fouls the trampoline lacing, whether the lead is fair — standing the rig up answers those directly, and confirms at the same time that the mast stands straight and the step carries the load.</p>
+<p>Doing it at night in a backyard in December, with the boat assembled on the grass, is a fair summary of how the whole project was built.</p>
+<figure><img src="../assets/images/sailboat-rig-standing.jpg" alt="The mast raised and stayed on the assembled boat at night" loading="lazy"><figcaption>Standing the rig to locate the shroud anchors, 13 Dec 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-mast-step.jpg" alt="Aluminum tube stepped into its hardwood socket on the crossbeam" loading="lazy"><figcaption>Mast step socket, 8 Sep 2019</figcaption></figure>
+<h2>The Decks</h2>
+<p>The decks are cedar strip-planked in alternating light and dark stock, the strips fanned and individually tapered so they converge to a point at the bow, with a dark walnut border at the edge.</p>
+<p>There is no structural justification for this. I did it because I wanted the boat to look good, and a strip-planked deck is beautiful in a way a sheet of plywood is not. On a boat you are going to spend years building and years looking at, that is a legitimate reason, and I would rather state it than invent an engineering rationale after the fact.</p>
+<p>The practical consequence is that strips will follow a much tighter camber than a sheet will, so the deck curve could be as tight as the aesthetics wanted. The pattern was laid out in CAD in advance, because a fanned layout has to be planned — otherwise you discover at the bow that the strips do not land where they need to.</p>
+<p>The decks went on <strong>last</strong>, after the frame was built, the rig stood, and the shroud anchors bonded in.</p>
+<h3>What I got wrong</h3>
+<p>The strips are supported by curved formers set above the hull cross members, at roughly twelve-inch spacing.</p>
+<p>That is too far apart, and the consequence is specific: <strong>the forward deck cannot be walked on.</strong> It is not really safe to sit on either. Press in the centre of a bay and you can hear things moving.</p>
+<p>Twelve-inch spacing leaves each strip spanning a foot unsupported, and a thin cedar strip with 4 oz glass on one face is a shallow section over that span. In the forward section, which is not backed by the hull framing, there is nothing else carrying it. Four to six inch spacing forward would have quartered the bending stress for almost no weight.</p>
+<p>There is a second problem underneath it: I do not know the finished thickness of the strips. They were faired and sanded to shape after gluing, and sanding to a fair curve removes whatever it removes — most at the crown, which is also where the span is longest. The thinnest material ends up in the worst place, and I cannot tell you by how much.</p>
+<h3>What actually deformed it</h3>
+<p>Over the following years the deck deformed and now needs redoing. I believe the root cause is the hulls being sealed.</p>
+<p>The hulls have no breathing path. A sealed hull sitting in the sun heats up and pressurises; overnight it cools and pulls a vacuum. That cycle runs every day, and when the hull is under vacuum, atmospheric pressure pushes inward on every surface. The deck is the largest, thinnest, least supported panel on the boat, so it takes the most of that — and wood under sustained cyclic load creeps and takes a set rather than springing back.</p>
+<p>Three factors, one outcome. The sealed hull applies the load. The twelve-inch spacing makes the deck vulnerable to it. And the deck's underside has no coating or glass at all, so it is a one-sided laminate with less stiffness than it could have had and an unbalanced response to moisture on top of everything else.</p>
+<h3>The rebuild</h3>
+<p>If I redo the deck — and I would like to:</p>
+<ul>
+<li><strong>Supports at four to six inches</strong> through the unframed forward section</li>
+<li><strong>Epoxy or glass the underside</strong>, making the deck a proper two-skin panel and closing off the moisture asymmetry</li>
+<li><strong>Work from the centreline outward</strong> to the walnut border, so the layup stays symmetric and accumulated error lands at a trim piece that can absorb it</li>
+<li><strong>Fit a breather tube in one of the pylons</strong>, so the hull can equalise continuously. A pylon is the highest point on the hull, well above spray, so it can breathe without offering water a way in. Leaving the drain plugs open works too, but only if you remember every time, and a plug at the transom is exactly where water finds you.</li>
+</ul>
+<figure><img src="../assets/images/sailboat-unpainted-overhead.jpg" alt="Overhead view of the assembled boat unpainted on the grass" loading="lazy"><figcaption>Assembled and unpainted, 30 May 2020 — strip decks fanned and converging at the bow</figcaption></figure>
+<figure><img src="../assets/images/sailboat-overhead.jpg" alt="Overhead view of the finished platform" loading="lazy"><figcaption>The finished platform, 30 May 2020</figcaption></figure>
+<h2>The Boom</h2>
+<p>The donor boat came without a boom, so this one is built rather than salvaged.</p>
+<p>The boom is a hollow wooden spar, built from staves of alternating light and dark stock glued up around a hollow core and tapered toward each end.</p>
+<p>The construction is a staved hollow section: individual strips milled with mating edge profiles, assembled into a closed tube, and shaped round afterward. It works because a spar in bending carries almost all its stress in the outer fibers — material at the centre of a solid section contributes weight and very little stiffness, so removing it is nearly free.</p>
+<p>Before any glue, the whole assembly was dry-fitted and strapped to confirm the staves closed cleanly along the full length and the taper came out fair. A hollow spar glue-up is unforgiving: every joint has to close simultaneously, the epoxy is curing while you work, and there is no adjusting it once it goes off. A dry run is the only way to find a stave that will not seat before it matters.</p>
+<p>Once shaped and faired, it was sheathed in glass and epoxy. On the hulls, sheathing is about abrasion and water. Here it is also structural: every wood fiber in a staved spar runs lengthwise, which is ideal for bending but leaves the section weak in torsion, and a sail twists its spar every time it is sheeted in. Glass wrapped around the tube contributes fibers at angles the wood does not have. It also seals the glue line between every stave, which on a hollow section are exactly the paths water would otherwise take into the core.</p>
+<p>The alternating dark and light staves are structurally incidental and visually deliberate. It costs nothing to alternate species during layup and it turns a functional part into something worth looking at.</p>
+<figure><img src="../assets/images/sailboat-spar-staves.jpg" alt="Milled staves for the hollow spar, light and dark alternating" loading="lazy"><figcaption>Staves dry-assembled before glue-up, 19 Dec 2019</figcaption></figure>
+<figure><img src="../assets/images/sailboat-spar-complete.jpg" alt="The completed hollow wooden spar" loading="lazy"><figcaption>The glued and shaped boom, 22 Dec 2019</figcaption></figure>
+<h2>The Mast I Did Not Build</h2>
+<p>Originally the plan was a wooden mast. I liked the idea, and I went through the entire design process for one — section, taper, stave layout — before running a structural simulation in Fusion 360 and abandoning it.</p>
+<p>The model returned a safety factor of about <strong>1.7</strong>, and the critical region was in the lower mast: roughly halfway between the step and the hounds, where the shrouds and forestay anchor. That is the point furthest from any support in the panel between step and rigging, and it is where the bending moment peaks.</p>
+<p>I decided that was not enough margin, and the reasoning was about consequence rather than the number itself. A mast failure is not a graceful one. It takes the rig down, very likely takes the arch and forward beam with it, and puts twenty-six feet of spar and wire on top of whoever is on the trampoline. On a boat with no redundancy, computed from material properties I was not fully confident in, 1.7 on that component was not a margin I wanted to sail behind.</p>
+<p>I considered spreaders — struts pushing the shrouds outboard partway up, so the wire braces the mast against bending at mid-span, which is exactly where the problem was. They would have worked. They also introduce a point load at the spreader tip, have to be angled correctly to bisect the shroud or they shove the mast sideways instead of supporting it, and put hardware into a hollow wooden section at its highest-stress point. I did not trust my ability to detail that correctly, and a failed spreader is worse than no spreader.</p>
+<p>So I bought a proven aluminum mast instead, and the wooden spar work went into the boom, where a failure drops the sail on your head rather than ending the boat.</p>
+<p><strong>Choosing not to build something is a design decision.</strong> The simulation did its job: it told me the design I wanted was marginal, and the right response to a marginal answer on a component with that failure mode is to stop.</p>
+<h2>Foils</h2>
+<p>The boat has no daggerboards or centreboards. Lateral resistance comes from the hull shape and the rudders, which is the same arrangement the Hobie 16 uses.</p>
+<p>The rudders are second-hand Hobie blades. Before buying, a practice rudder was shaped from foam and thrown away — a rudder blade is a wing, its performance is set by section shape rather than strength, and a blade that is plenty strong but carries a lumpy asymmetric section will stall early and feel vague. Foam costs nothing, shapes in minutes, and can be cut apart to check the section, so every mistake in learning to shape a foil happens on material that does not matter.</p>
+<figure><img src="../assets/images/sailboat-practice-rudder.jpg" alt="The practice rudder shaped from foam" loading="lazy"><figcaption>Practice rudder in foam, 1 Jan 2020 — a throwaway to learn the shaping on</figcaption></figure>
 <h2>Structural Simulation</h2>
-<p>Douglas fir was set up as a material in Fusion 360 for finite element work on the structure. The density and elastic modulus were entered correctly — 559 kg/m³ and 12.6 GPa, both good published figures for Douglas fir.</p>
+<p>Douglas fir was set up as a material in Fusion 360 for finite element work. The density and elastic modulus were entered correctly — 559 kg/m³ and 12.6 GPa, both good published figures.</p>
 <p>The rest of the material card was not. Poisson's ratio sat at 1×10⁻⁴ against a real value near 0.3, and both yield strength and ultimate tensile strength sat at 1×10⁻⁵ MPa against a real tensile figure closer to 85 MPa along the grain. Those are placeholder defaults that were never overwritten.</p>
-<p>That has a precise consequence, and it is worth being exact about rather than vague. Deflection results from a model like this are still meaningful, because displacement under load is governed by elastic modulus and geometry, and the modulus was right. Stress results, and anything derived from them — safety factor, failure prediction, "does this hold" — are not, because the model was told the material has essentially no strength. Everything fails, everywhere, at any load.</p>
-<p>There is a second limitation worth naming regardless. Wood is orthotropic: its stiffness along the grain is on the order of twenty times its stiffness across the grain, and plywood is a laminate of alternating grain directions on top of that. An isotropic material card with a single modulus cannot represent either. For rough comparative work — is version A stiffer than version B — that simplification is usually tolerable. For an absolute number it is not.</p>
+<p>That has a precise consequence. Deflection results from a model like this are still meaningful, because displacement under load is governed by elastic modulus and geometry, and the modulus was right. Stress results, and anything derived from them — safety factor, failure prediction — are not, because the model was told the material has essentially no strength.</p>
+<p>There is a second limitation worth naming regardless. Wood is orthotropic: its stiffness along the grain is on the order of twenty times its stiffness across the grain, and plywood is a laminate of alternating grain directions on top of that. An isotropic material card with a single modulus cannot represent either. For comparative work — is version A stiffer than version B — that simplification is usually tolerable. For an absolute number it is not.</p>
 <h2>The Shop Constraint</h2>
 <p>The boat was built in a shared garage that had to be emptied before work could start and repacked before the end of the day. Every session began by moving cars, tools, furniture, and stored household goods out onto the driveway, and ended by putting all of it back, usually a little after dark.</p>
-<p>That constraint shaped the schedule more than any technical decision in the project. A shop you set up and tear down imposes a fixed overhead on every session, independent of how much work gets done inside it. Once that overhead is high enough, short sessions stop being worth starting: an hour of available time buys no progress, because the hour is consumed by setup and teardown. Work therefore has to batch into long blocks, long blocks require daylight and free weekends, and a task representing twenty hours of actual labor spreads across months of calendar.</p>
-<p>It also dictated where the work happened. Wet-bending decks, sheathing, fairing, and sanding all took place in the driveway rather than the shop, partly because they needed the room and partly because the shop was frequently occupied by its normal contents.</p>
-<p>The engineering lesson is one that transfers directly to professional work: fixed overhead per work session is a schedule multiplier, and it is invisible in any estimate built from task durations alone. Estimating this project by adding up the hours the tasks actually required would have produced a number wildly disconnected from the thirty-one months it took.</p>
-<figure><img src="../assets/images/sailboat-garage-unload.jpg" alt="The garage contents emptied into the driveway for a work session" loading="lazy"><figcaption>A typical work session, 15 May 2019 — the shop's contents in the driveway, with a hull on the truck rack</figcaption></figure>
-<h2>Iteration: Three Attempts at a Hull</h2>
-<p>The hull that ended up on the boat was the third one built.</p>
-<p>That fact reframes the project's timeline more than anything else in it. Thirty-one months for a 16 ft boat looks like a slow build until you know that a substantial part of it was spent building hulls that were then set aside and started over — at which point it stops being a schedule problem and becomes an iteration count.</p>
-<h2>After Action: The Deck Crack</h2>
-<p>In early February 2019 a split appeared in the deck near the sheer, running along the grain.</p>
-<figure><img src="../assets/images/sailboat-deck-crack.jpg" alt="Split in the deck panel running along the grain near the sheer" loading="lazy"><figcaption>Deck split near the sheer, 2 Feb 2019</figcaption></figure>
-<h2>First Assembly</h2>
-<p>On 1 September 2019 the boat went together for the first time: both hulls, both cambered beams seated on their pylons, trampoline laced and tensioned between them. Twenty-two months from the first sketches.</p>
-<p>A first full assembly is a genuine engineering milestone rather than just a photograph. Every part until then had been checked against a drawing or a mockup; this is the first time all of them were checked against each other. Fit errors that a drawing will happily tolerate — a pylon a few degrees off vertical, beams that don't sit parallel, a trampoline cut to a frame that turns out not to be square — only appear here.</p>
-<figure><img src="../assets/images/sailboat-first-assembly.jpg" alt="The complete boat assembled on the lawn for the first time" loading="lazy"><figcaption>First full assembly, 1 Sep 2019</figcaption></figure>
-<p>Worth noting from the photograph: the hulls are still open at this point, with frames and foam exposed. The decks photographed in December 2018 and January 2019 belonged to earlier attempts.</p>
-<h2>The Mast Step</h2>
-<p>A hardwood block on the beam carries a socket for the mast heel. The photographs from 8 September 2019 show a large-diameter round aluminum tube standing in that socket — sized for the sleeve that would later be bonded into the heel of the wooden spar.</p>
-<figure><img src="../assets/images/sailboat-mast-step.jpg" alt="Aluminum tube stepped into its hardwood socket on the crossbeam" loading="lazy"><figcaption>Mast step socket, 8 Sep 2019</figcaption></figure>
-<h2>Standing the Rig: Locating the Shroud Anchors</h2>
-<p>In December 2019 the mast was raised on the assembled boat in the backyard, with a temporary spreader holding the bows at their spacing, in order to find where the shroud anchors should go.</p>
-<p>The shroud base position is not a cosmetic decision. The angle each shroud makes with the mast determines how much wire tension is needed to hold the spar up, and that tension turns into compression down the mast and into the platform beneath it. A wider shroud base does the same job with less tension and less compression — but pushes the anchor outboard, toward the edge of a hull where there may be no structure to bolt to. A narrow base needs much higher tension for the same support, and all of it lands in the mast. Fore-and-aft placement sets the rake.</p>
-<p>The geometry of that is calculable. What isn't calculable from a drawing is where the wire actually lands relative to structure that exists: whether the anchor falls on a frame you can bolt through or a bay you can't, whether it fouls the trampoline lacing, whether the lead is fair. Standing the rig up and pulling the wires to candidate points answers those questions directly, and at the same time confirms that the mast stands straight and that the step and beam carry the load.</p>
-<p>Doing it at night in a backyard in December, with the boat assembled on the grass, is also a fair summary of how the whole project was built.</p>
-<figure><img src="../assets/images/sailboat-rig-standing.jpg" alt="The mast raised and stayed on the assembled boat at night" loading="lazy"><figcaption>Standing the rig to locate the shroud anchors, 14 Dec 2019</figcaption></figure>
-<h2>The Spar</h2>
-<p>The mast is a hollow wooden spar, built from staves of alternating light and dark stock glued up around a hollow core, tapering from the heel to a point at the head.</p>
-<p>Building a spar rather than using the salvaged aluminum one is the second major decision of the project, and it partly reverses the first. The rig was bought to avoid designing a sail plan; the mast was then built anyway. What that buys is a spar tuned to this boat rather than to a Hobie 16 — and a hollow wooden section can be lighter than solid for the same stiffness, which matters more on a mast than almost anywhere else on a boat, because weight aloft costs righting moment at the worst possible lever arm.</p>
-<p>The construction is a staved hollow spar: individual strips milled with mating edge profiles, assembled into a closed tube, and shaped round afterward. It is the standard way to build a light wooden spar, and it works because a mast in bending carries almost all its stress in the outer fibers — the material at the center of a solid spar contributes weight and very little stiffness, so removing it is nearly free.</p>
-<p>The dark strips alternating with the light ones are structurally incidental and visually deliberate. It costs nothing to alternate species during layup and it turns a functional part into something worth looking at.</p>
-<p>Before any glue, the whole spar was dry-assembled and strapped, held with tape and ratchet straps, to confirm the staves closed cleanly along the full length and the taper came out fair. A hollow spar glue-up is unforgiving: every joint has to close simultaneously, the epoxy is curing while you work, and there is no adjusting it once it goes off. A dry run is the only way to find a stave that won't seat before it matters.</p>
-<p>The heel carries an aluminum sleeve set into the hollow section. That detail is not decorative. A mast heel sits in a socket, takes the full compression of the standing rigging, works against the step with every motion of the boat, and lives in whatever water finds its way into the step. Bare end grain in that position crushes under bearing load and wicks water into the laminate. A bonded metal sleeve gives a hard bearing face, seals the end of the spar, and lets the wooden mast seat into the same socket that was trial-fitted with plain tube in September 2019.</p>
-<p>Once shaped and faired, the spar was sheathed in glass cloth and epoxy.</p>
-<p>On the hulls, sheathing is about abrasion and water. On the spar it is also structural. Every wood fiber in a staved spar runs lengthwise, which is ideal for bending — the load a mast mostly sees — but leaves the section weak in torsion, and a sail twists its mast every time it is sheeted in. Glass wrapped around the tube contributes fibers at angles the wood does not have, and those are what carry the twist. The sheathing also seals the glue line between every stave, which on a hollow spar are exactly the paths water would otherwise take into the core.</p>
-<figure><img src="../assets/images/sailboat-spar-staves.jpg" alt="Milled staves for the hollow spar, light and dark alternating" loading="lazy"><figcaption>Spar staves dry-assembled before glue-up, 19 Dec 2019</figcaption></figure>
-<figure><img src="../assets/images/sailboat-spar-complete.jpg" alt="The completed hollow wooden spar standing in the shop" loading="lazy"><figcaption>The glued and shaped spar, 22 Dec 2019</figcaption></figure>
-<h2>Foils</h2>
-<p>A rudder blade is a wing. Its job is to generate side force with as little drag as possible, and unlike almost every other part of the boat, its performance is determined by shape rather than strength — a blade that is plenty strong but carries a lumpy, asymmetric section will stall early, feel vague, and drag.</p>
-<p>That makes shaping a foil the hardest hand skill in the project. The section has to be fair along the whole span and symmetrical about the centerline, and the only tools for it are a plane, a sanding block, and judgement.</p>
-<p>So the first rudder was made out of foam and thrown away. Foam costs nothing, shapes in minutes, and can be cut apart to check the section — which means every mistake in learning to shape a foil gets made on material that doesn't matter, before any hardwood is touched.</p>
-<figure><img src="../assets/images/sailboat-practice-rudder.jpg" alt="The practice rudder shaped from foam" loading="lazy"><figcaption>Practice rudder in foam, 1 Jan 2020 — a throwaway to learn the shaping on</figcaption></figure>
-<h2>Fit-Out and Detail</h2>
-<p>Not every decision on the boat was structural. A compass rose was designed as a marquetry inlay — eight points in alternating light and dark woods, cardinal letters around the rim, and a latitude and longitude engraved on the outer ring marking a specific place.</p>
-<p>It carries no load and saves no weight. It is there because a boat you designed and built yourself gets to have something on it that exists only because you wanted it there, and because the same CAD tool used to lay out hull panels and model a pylon joint will just as happily lay out a veneer pattern.</p>
-<figure><img src="../assets/images/sailboat-compass-rose.jpg" alt="CAD render of the compass rose marquetry inlay" loading="lazy"><figcaption>Compass rose inlay, designed Feb 2019</figcaption></figure>
-<h2>Structural Interfaces</h2>
-<p>The crossbeam stock is aluminum tube, bought in several diameters so a smaller pylon could telescope inside a larger receiver — the joint modeled in Fusion the previous November.</p>
-<p>The crossbeams are laminated wood, built up from strips glued in long clamped runs, and they are cambered rather than straight — each beam arches upward across the span.</p>
-<p>Camber earns its complexity twice. It lifts the trampoline and the crew clear of wave tops, which on a 16 ft cat is the difference between sailing and being dragged through every crest. And an arched member loaded downward carries a share of that load in compression along its own curve rather than purely in bending, which lets a lighter section do the same job — provided the ends are restrained against spreading, which on this boat they are, by the hulls themselves.</p>
-<p>The platform is a rectangle: two cambered beams running athwartships between the hulls, two straight rails fore and aft, with the trampoline laced inside the frame.</p>
-<p>At each of the four corners, the beam and the rail cross in a half-lap, and that lap seats down onto a hardwood post block. The block is the load-bearing part of the assembly: it takes the crossing members above and carries the aluminum pylon below.</p>
-<p>The connection to the hull runs through those four identical corner fittings, one per beam end. Each is a hardwood block, slotted on top to receive the beam end and bored underneath to take a short aluminum pylon that seats into a receiver in the hull deck. Aluminum appears only at that spigot; everything spanning between the hulls is wood.</p>
-<p>Using hardwood as the adapter between a wooden beam and an aluminum pylon is worth defending explicitly, because a reader's first instinct is that a load path like this should be a machined or welded metal fitting. The case for wood is that it needs no welding equipment or certification, it can be shaped with tools already in the shop, it will not gall against aluminum the way a steel fitting can, and it is compliant enough to spread a bearing load rather than concentrate it at a hard edge. It also joins to the wooden beam with the same glue used everywhere else on the boat. The case against it is creep under sustained load, sensitivity to moisture where the pylon enters, and a bearing surface that can crush over time.</p>
-<p>The detail was developed from precedent. The production Hobie 16 carries the same load into a moulded fiberglass hull by bedding the pylon tube in foam and bonding it into the skin, spreading the reaction across a broad area of laminate rather than a narrow ring of it. The problem is identical here; only the material differs, so the principle carries over even though the execution can't.</p>
-<p>Inside the hull, the receiver is not simply a tube let into the deck. It stands vertically through the hull structure and is boxed in by framing members tying it to the transverse frames around it.</p>
-<p>That boxing is the whole point of the detail. A socket set into a plywood deck with nothing around it concentrates the entire beam reaction into a small ring of plywood end grain — which is the standard way to eventually drive a fitting down through a hull. Framing the receiver into the surrounding structure turns a point load into a distributed one before the skin ever sees it.</p>
-<p>The complete load path runs: sail loads into the mast, mast into the step block on the beam, along the cambered beam to the corner, through the half-lap into the hardwood post block, down the aluminum pylon into the receiver, out through the boxed framing into the hull frames and skin. Every transition in that chain is a place where a load can concentrate, and every one of them is detailed to spread it instead.</p>
-<figure><img src="../assets/images/sailboat-receiver-install.jpg" alt="The pylon receiver tube framed into the hull structure" loading="lazy"><figcaption>Receiver tube boxed into the hull framing, 27 Nov 2019</figcaption></figure>
-<p>The pylon-in-receiver arrangement also makes the boat demountable: the beams lift off the hulls, which matters for a trailered boat that has to be assembled at the ramp and stored in a garage that has to be emptied to work in.</p>
-<p>The joint went through four stages before any production part was cut. A finished prototype in November 2018 proved the half-lap-over-post arrangement in hardwood. A stick-and-dowel model in December checked that the three-way intersection could physically go together at scale. Full-size mockups on the floor in February 2019 confirmed proportions in real material. Production fittings followed in August.</p>
-<p>Four prototyping stages is a lot for a single joint, and the reason is that there are four corners. A joint that appears once can be adjusted in place if it comes out wrong; a joint that appears four times identically has to be right before the first cut, because getting it wrong means cutting all four again. Prototype effort should scale with how many times a part repeats, and this is a clean example of that.</p>
-<p>The trampoline laces to a grommeted track fastened along the inboard edge of each beam, with line running through the grommets — the standard beach-cat arrangement, which keeps the tramp tensionable and replaceable without touching the structure.</p>
-<figure><img src="../assets/images/sailboat-corner-joint.jpg" alt="The half-lap corner joint seated on its hardwood post block" loading="lazy"><figcaption>Corner joint, 14 Aug 2019 — crossbeam and side rail half-lapped over the post block</figcaption></figure>
-<figure><img src="../assets/images/sailboat-frame-assembly.jpg" alt="The complete frame dry-assembled on the driveway" loading="lazy"><figcaption>The platform dry-assembled, 16 Aug 2019 — camber visible across the near beam</figcaption></figure>
-<figure><img src="../assets/images/sailboat-trampoline.jpg" alt="The trampoline laced taut into the finished frame" loading="lazy"><figcaption>Trampoline laced and tensioned, 1 Sep 2019</figcaption></figure>
-<figure><img src="../assets/images/sailboat-corner-fittings.jpg" alt="The four hardwood corner fittings, each slotted for a beam end and bored for an aluminum pylon" loading="lazy"><figcaption>Four identical corner fittings, 8 Aug 2019</figcaption></figure>
-<figure><img src="../assets/images/sailboat-beam-fitting.jpg" alt="The pylon and receiver assembly in aluminum tube and hardwood" loading="lazy"><figcaption>Pylon and hardwood fitting, 7 May 2019</figcaption></figure>
-<figure><img src="../assets/images/sailboat-pylon-receiver.jpg" alt="Fusion 360 model of the pylon and receiver pipe joint" loading="lazy"><figcaption>Pylon-and-receiver interface, Nov 2018 — 3 in OD pylon inside a receiver pipe</figcaption></figure>
-<h2>Build Timeline</h2>
+<p>A shop you set up and tear down imposes a fixed overhead on every session, independent of how much work gets done inside it. Once that overhead is high enough, short sessions stop being worth starting: an hour of available time buys no progress, because the hour is consumed by setup and teardown. Work therefore has to batch into long blocks, long blocks require daylight and free weekends, and a task representing twenty hours of actual labor spreads across months of calendar.</p>
+<p>It also dictated where the work happened. Hull forming, sheathing, fairing, and sanding all took place in the driveway rather than the shop, partly because they needed the room and partly because the shop was frequently occupied by its normal contents.</p>
+<p>The lesson transfers directly to professional work: fixed overhead per work session is a schedule multiplier, and it is invisible in any estimate built from task durations alone.</p>
+<figure><img src="../assets/images/sailboat-garage-unload.jpg" alt="The garage contents emptied into the driveway for a work session" loading="lazy"><figcaption>A typical work session, 15 May 2019 — the shop's contents in the driveway</figcaption></figure>
+<h2>Thirty-One Months, Ten Months of Work</h2>
+<p>The project ran from November 2017 to June 2020. That is thirty-one months on the calendar and roughly <strong>ten months of actual working time.</strong></p>
+<p>The gap is school. The idea started in November 2017; it became a committed project around February 2018; and it stopped dead during every active semester after that. The long pauses in the timeline are not drift or lost motivation — they are coursework.</p>
+<p>Stated as thirty-one months, this looks like a slow build. Stated as ten months of work spread across two and a half years of being a full-time student, with a shop that had to be emptied and repacked around every session, it is a different number entirely. Both are true; only one of them describes the engineering.</p>
 <table>
 <thead>
 <tr>
@@ -295,79 +460,67 @@ footer.site a{color:var(--mute)}
 <tbody>
 <tr>
 <td>Nov 2017 – Feb 2018</td>
-<td>Design phase</td>
-</tr>
-<tr>
-<td>Mar 2018</td>
-<td>CAD modeling and detail part drawings in Fusion 360</td>
+<td>Design: adapting a 20 ft design to 16 ft</td>
 </tr>
 <tr>
 <td>Apr 2018</td>
-<td>Work table built; plywood sourced; scarf joints; lofting and panel cutting</td>
+<td>Plywood delivered; scarf joints; lofting and panel cutting</td>
+</tr>
+<tr>
+<td>Mar 2018</td>
+<td>Full-length work table built; CAD modelling and panel development</td>
 </tr>
 <tr>
 <td>May – Aug 2018</td>
 <td>Edge glue-ups, shop-built clamps, stitching preparation</td>
 </tr>
 <tr>
-<td>Oct 2018</td>
-<td>First hull stitched and filleted</td>
+<td>Nov 2018</td>
+<td>Replacement mast collected from Galveston; rig test-raised; transom fitted</td>
 </tr>
 <tr>
-<td>Nov 2018</td>
-<td>Rig acquired and test-raised; transom fitted; structural interfaces modeled</td>
+<td>Oct 2018</td>
+<td>First hull stitched; donor Hobie 16 and trailer bought for $200</td>
 </tr>
 <tr>
 <td>Dec 2018</td>
-<td>Joint mockups; species selection; a hull decked; another framed and closed out</td>
+<td>Corner joint models; hull forming; first hull cracked and scrapped</td>
 </tr>
 <tr>
 <td>Jan 2019</td>
-<td>A further hull decked</td>
+<td>Second hull formed — straps at closer spacing after the first failure</td>
 </tr>
 <tr>
-<td>Feb 2019</td>
-<td>Deck split found and addressed; hulls sheathed in glass; aluminum beam stock acquired; structural simulation; laminated cedar component designed</td>
+<td>Feb – Mar 2019</td>
+<td>Cracking found in hull two; hulls sheathed; aluminum stock acquired; joint mockups</td>
 </tr>
 <tr>
-<td>Mar 2019</td>
-<td>Hull faired and sanded</td>
-</tr>
-<tr>
-<td>Apr 2019</td>
-<td>Third hull attempt begun — panels cut, stitched, filleted</td>
-</tr>
-<tr>
-<td>May 2019</td>
-<td>Third hull closed out and framed; beam-to-pylon fittings made in aluminum and hardwood; wooden spar apparently completed</td>
+<td>Apr – May 2019</td>
+<td>Third hull — new supplier, formed in one cycle on 7 May; pylon fittings made</td>
 </tr>
 <tr>
 <td>Aug 2019</td>
-<td>Crossbeams laminated; corner fittings made; platform and trampoline assembled for the first time</td>
+<td>Corner posts bored; beams and arch laminated; platform and trampoline assembled</td>
 </tr>
 <tr>
-<td>Sep 2019</td>
-<td>Trampoline laced and tensioned; first full assembly; mast step trial-fitted</td>
+<td>1 Sep 2019</td>
+<td>First full assembly — both hulls, frame and trampoline together</td>
 </tr>
 <tr>
 <td>Nov 2019</td>
-<td>Pylon receivers installed and framed into the hulls; boat reassembled</td>
+<td>Pylon receivers installed and framed into the hulls</td>
 </tr>
 <tr>
 <td>Dec 2019</td>
-<td>Rig stood on the assembled boat to locate shroud anchors</td>
-</tr>
-<tr>
-<td>Dec 2019</td>
-<td>Hollow wooden spar staved, dry-fitted, glued up, shaped and glass-sheathed</td>
+<td>Rig stood 13 Dec to locate shroud anchors; boom staved, dry-fitted and glued</td>
 </tr>
 <tr>
 <td>Jan 2020</td>
-<td>Spar completed; first practice rudder shaped in foam</td>
+<td>Boom completed; practice rudder shaped in foam</td>
 </tr>
 <tr>
 <td>Feb – May 2020</td>
-<td>Decks strip-planked; foils shaped; trailer prepared</td>
+<td>Decks strip-planked and sheathed; foils fitted; trailer prepared</td>
 </tr>
 <tr>
 <td>30 May 2020</td>
@@ -375,65 +528,90 @@ footer.site a{color:var(--mute)}
 </tr>
 <tr>
 <td>Jun 2020</td>
-<td>Fairing; hulls painted indoors; deck hardware and standing rigging fitted</td>
+<td>Hulls painted indoors; decks and frame varnished; hardware fitted</td>
 </tr>
 <tr>
 <td>27 Jun 2020</td>
-<td>Boat complete, painted and rigged</td>
+<td>Complete</td>
 </tr>
 <tr>
-<td>Jul 2020</td>
+<td>1 Jul 2020</td>
 <td>Registered, launched and sailed</td>
 </tr>
 <tr>
 <td>May 2021</td>
-<td>Still sailing — ten months of service</td>
+<td>Still sailing</td>
 </tr>
 </tbody>
 </table>
-<h2>Completion</h2>
-<p>By 30 May 2020 the boat was complete and rigged: hulls decked, platform assembled, standing rigging set up, mainsail and jib hoisted, sitting on its trailer.</p>
-<p>The decks are cedar strip-planked in alternating light and dark stock, matching the spar. That detail had been designed sixteen months earlier — the CAD file from February 2019 was a deck layout worked out strip by strip — and it means the hulls carry two different construction methods: sheet plywood below the sheer, strip planking above it. Plywood is the right choice for the hull skin, where large panels have to take compound curves and be watertight. Strip planking is the right choice for a deck, where the panel is smaller, the curve is gentler, and appearance matters because it is the surface everyone sees.</p>
-<p>The strips are not laid parallel. They fan along the hull and converge to a point at the bow, following the deck's plan shape, which means every strip is individually tapered. That is considerably more work than parallel planking and it is the difference between a deck that looks applied and one that looks like it belongs to the hull. It also explains why the layout was worked out in CAD sixteen months earlier: a fanned pattern has to be planned, or you discover at the bow that the strips do not land where they need to.</p>
-<p>The fore-and-aft rails were remade in the same striped laminate, with the pylon receivers let in perpendicular through the section.</p>
-<p>Final fit-out ran into June: a mainsheet traveler track bedded onto the aft beam, cam cleats, mast base hardware, and standing rigging.</p>
-<h3>Painting indoors</h3>
-<p>The hulls were faired and painted white in a sheeted-off room inside the house — furniture covered, floor protected, hulls on sawhorses, paint on a folding table.</p>
-<p>That looks like an act of desperation and is actually the correct decision. A gloss topcoat is the one coating on a boat where conditions matter more than technique, and it is ruined by three things: airborne dust settling into wet paint, temperature swings that change how the paint flows and cures, and humidity. A garage in Mississippi in June fails all three — and this particular garage was full of sanding dust from the fairing work of the preceding weeks. A sheeted interior room is climate controlled, effectively dust free, and lit well enough to catch a run while it can still be brushed out.</p>
-<p>Every earlier coating job on this boat happened in a garage or a driveway because those coatings were structural and their appearance did not matter. The finish coat is the one people see, so it got the best conditions available rather than the most convenient ones.</p>
-<p>The boat was complete, painted, rigged and standing on 27 June 2020 — thirty-one months from the first sketches.</p>
+<h2>Finishing</h2>
+<p>The finishing order was: hulls sheathed early, decks sheathed once on, hulls painted, then decks and frame varnished together in a single campaign.</p>
 <h3>Two answers to the same problem</h3>
-<p>The decks are finished bright: 4 oz glass in clear epoxy, then a UV-protective varnish over the top.</p>
-<p>That last coat is not decoration. Epoxy has one serious weakness as an exposed finish — it is not UV stable. Left in sunlight it yellows, chalks, and eventually breaks down at the surface, taking the bond with the cloth beneath it with it. Any epoxy surface that will live outdoors has to be shielded from ultraviolet by something, and the only question is what.</p>
-<p>The boat answers that question twice, differently, for the same reason. On the hulls, the shield is white paint: opaque, tough, cheap to renew, and it hides the glass weave. On the decks, where the whole point is to see the wood, the shield is a UV-filtering varnish: transparent, and sacrificial by design — it degrades in the sun instead of the epoxy, and gets recoated every year or two.</p>
-<p>That is the underlying logic of the whole finish scheme. Paint where the surface has to survive; varnish where it has to be looked at; the same epoxy structure under both.</p>
-<figure><img src="../assets/images/sailboat-finished.jpg" alt="The finished boat rigged on the lawn, painted hulls and varnished decks" loading="lazy"><figcaption>Complete, painted and rigged, 27 Jun 2020 — white hulls, varnished decks and beams</figcaption></figure>
+<p>Epoxy has one serious weakness as an exposed finish — it is not UV stable. Left in sunlight it yellows, chalks, and eventually breaks down at the surface, taking the bond with the cloth beneath it. Any epoxy surface that will live outdoors has to be shielded from ultraviolet, and the only question is what with.</p>
+<p>The boat answers that question twice, differently, for the same reason. On the hulls, the shield is white paint: opaque, tough, cheap to renew, and it hides the weave. On the decks and frame, where the whole point is to see the wood, the shield is a UV-filtering varnish: transparent, and sacrificial by design — it degrades in the sun instead of the epoxy, and gets recoated every year or two.</p>
+<p>Paint where the surface has to survive; varnish where it has to be looked at; the same epoxy structure under both.</p>
+<h3>Painting indoors</h3>
+<p>The hulls were faired and painted white in a sheeted-off room inside the house — furniture covered, floor protected, hulls on sawhorses.</p>
+<p>That looks like desperation and is actually correct. A gloss topcoat is the one coating on a boat where conditions matter more than technique, and it is ruined by three things: airborne dust settling into wet paint, temperature swings that change how the paint flows and cures, and humidity. A garage in Mississippi in June fails all three — and this one was full of sanding dust from the fairing work of the preceding weeks.</p>
+<p>Every earlier coating job happened in a garage or driveway because those coatings were structural and their appearance did not matter. The finish coat is the one people see, so it got the best conditions available rather than the most convenient ones.</p>
+<figure><img src="../assets/images/sailboat-painting-indoors.jpg" alt="A hull in gloss white on sawhorses in a sheeted-off room indoors" loading="lazy"><figcaption>Painting indoors, 16 Jun 2020 — climate controlled, dust free, and lit well enough to catch a run</figcaption></figure>
+<figure><img src="../assets/images/sailboat-frame-varnish.jpg" alt="The platform being varnished indoors on the same plastic sheeting" loading="lazy"><figcaption>The frame varnished alongside the decks, 20 Jun 2020 — one campaign, one set of conditions</figcaption></figure>
+<figure><img src="../assets/images/sailboat-finished.jpg" alt="The finished boat rigged on the lawn, painted hulls and varnished decks" loading="lazy"><figcaption>Complete, painted and rigged, 27 Jun 2020</figcaption></figure>
 <figure><img src="../assets/images/sailboat-rigged.jpg" alt="The boat rigged on its trailer before painting" loading="lazy"><figcaption>Rigged for the first time, 30 May 2020 — before paint</figcaption></figure>
-<figure><img src="../assets/images/sailboat-overhead.jpg" alt="Overhead view of the finished platform on the trailer" loading="lazy"><figcaption>The finished platform — strip-planked decks, cambered beams, striped rails, 30 May 2020</figcaption></figure>
-<h2>Sea Trials</h2>
-<p>She sailed in early July 2020, under main and jib, with three people aboard.</p>
-<p>Both hulls sit in the water in the trial photographs and the boat is sailing upright rather than flying a hull, which is what a light-air day with three people on a 16 ft platform looks like. The important result is the unglamorous one: the boat floats on its designed lines with a realistic crew load, the rig stands, the platform carries it, and it goes where it is pointed.</p>
-<p>That is the whole point of a first sail. Everything before it — the stiffness comparison, the load path through the pylons, the shroud geometry worked out by standing the rig in a backyard — is a prediction. The first sail is the only test that checks all of those predictions simultaneously, against water rather than against a drawing.</p>
-<figure><img src="../assets/images/sailboat-sailing-aerial.jpg" alt="Aerial view of the boat sailing on open water" loading="lazy"><figcaption>Under way, May 2021</figcaption></figure>
+<h2>Sea Trials and Service</h2>
+<p>She sailed in July 2020, and has sailed since.</p>
+<p><strong>She tracks.</strong> The hulls generate enough lateral resistance without daggerboards that the boat goes where it is pointed — which is the single result that could not be verified before launch, because the hull shape came from an adapted plan and lateral area was never calculated.</p>
+<p><strong>She is stiff.</strong> No detectable flex, creak, or working in the beams or pylons under sail. The platform does its job.</p>
+<p><strong>Tacking is a challenge.</strong> This is a general 16 ft catamaran characteristic rather than a fault in this boat — two hulls give a lot of lateral resistance and no keel to pivot around, so the boat carries way through the turn and will sit head to wind if it is not driven through with speed.</p>
+<p><strong>I have never flown a hull.</strong> That was the original reason for building a catamaran, and I have not done it — not from nerves in general, but for a specific structural reason set out below.</p>
+<figure><img src="../assets/images/sailboat-sailing-aerial.jpg" alt="Aerial view of the boat sailing on open water" loading="lazy"><figcaption>Under way, May 2021 — ten months after launch</figcaption></figure>
 <figure><img src="../assets/images/sailboat-sailing.jpg" alt="The boat sailing under main and jib with three crew aboard" loading="lazy"><figcaption>First sail, July 2020</figcaption></figure>
-<h3>Still sailing</h3>
-<p>The aerial photographs above were taken in May 2021, ten months after the first launch, on different water and in different conditions — the boat sailing single-handed in light air with a clean wake and both hulls level.</p>
-<p>That is a more meaningful structural result than the first sail was. A boat that floats once has survived a single day. A boat still sailing a year later has been assembled and disassembled repeatedly, trailered, rigged and de-rigged, left in the sun, and loaded and unloaded from its pylons many times over — which is the actual service life a demountable platform has to survive, and the regime where a wooden structure with bolted and bonded joints would show any weakness it had.</p>
+<p>The May 2021 photographs are a more meaningful structural result than the first sail. A boat that floats once has survived a day. A boat still sailing a year later has been assembled and disassembled repeatedly, trailered, rigged and de-rigged, left in the sun, and loaded onto its pylons many times over — which is the actual service life a demountable platform has to survive.</p>
+<h2>What I Would Change</h2>
+<p>All of these come from things the boat has actually done, rather than from a review of the drawings.</p>
+<h3>A forward crossbeam between the bows</h3>
+<p>The forestay pulls both bows toward the centreline, and at present nothing across the front of the boat resists that directly — the load goes back through the hulls to the platform. A beam across the bows would take it in compression, on a direct path, and stop the bow tips being drawn together.</p>
+<h3>A direct member from the shroud anchors to the pylons</h3>
+<p><strong>This is the one that keeps me from flying a hull.</strong></p>
+<p>The shroud loads currently land on chainplates bolted through 4 mm plywood with a Douglas fir block behind them. That block spreads the load into the skin, which is correct as far as it goes — but the skin then has to carry it through the hull structure and into the pylons before it reaches the frame. There is no direct member from chainplate to pylon.</p>
+<p>Fly a hull and the entire righting moment of the boat runs through that path. I know where the weak link is, so I have chosen not to load it.</p>
+<p>A strut or tie from the shroud anchor straight to the pylon would bypass the skin entirely and put the load into the frame directly. It is the same reasoning as the tie rod in the arch: give the force a route rather than making the structure improvise one.</p>
+<h3>A walkable forward deck</h3>
+<p>Supports at four to six inches instead of twelve through the unframed forward section, and glass or epoxy on the underside. As built, the forward deck cannot take a person's weight.</p>
+<h3>Breathing for the hulls</h3>
+<p>A breather tube in one pylon, so the hulls stop pressurising and pulling a vacuum every day. I believe that cycle is the primary cause of the deck deformation.</p>
+<h3>And two smaller ones</h3>
+<p>Douglas fir lattice bulkheads instead of epoxy-coated foam. And daggerboards — not for lateral resistance, which the hulls handle, but to give the boat a pivot point to rotate around and improve the tacking behaviour.</p>
+<h2>Cost</h2>
+<p>Total project cost was approximately <strong>$4,200.</strong></p>
+<p>For context, that is roughly what a used Hobie 16 in reasonable condition sells for. The figure includes the scrapped first hull, plywood from two suppliers, West System resin and hardener, glass cloth, all timber, hardware, paint and varnish, the donor boat, the replacement mast, and the drive to Galveston to collect it.</p>
+<p>Two line items are worth breaking out because they drove decisions throughout.</p>
+<p>The <strong>donor boat cost $200</strong> — a non-repairable Hobie 16 and its trailer — which supplied the rudders, deck hardware and road trailer. The mast, sails and standing rigging were each sourced separately second-hand, from Craigslist, a sailing forum and eBay respectively.</p>
+<p>The <strong>plywood</strong> ran the other way: $70 per sheet, two sheets per hull, plus about $150 in shipping — roughly $300 of material per hull delivered. Losing hull one was a real fraction of the budget, and it is why the second hull was coaxed into shape over ten hours rather than abandoned.</p>
+<h2>Weight</h2>
+<p>Never measured. I can lift the assembled boat by getting under the frame and pressing up with my legs, which puts it somewhere in the region of <strong>250–300 lb</strong>.</p>
+<p>For comparison, a rigged Hobie 16 is about 320 lb, so the boat is in the same class or a little lighter — which is what the material choice predicted.</p>
 <h2>Registration</h2>
 <p>The boat carries a Mississippi Department of Wildlife, Fisheries and Parks registration and a state-assigned hull identification number.</p>
-<p>A home-built boat has no manufacturer's HIN, so the number has to be applied for and issued by the state before the vessel can be registered. It is a small administrative step and a real milestone: it is the point at which the thing in the backyard becomes a registered vessel with a legal identity.</p>
+<p>A home-built boat has no manufacturer's HIN, so the number has to be applied for and issued by the state before the vessel can be registered. It is a small administrative step and a real milestone: the point at which the thing in the backyard becomes a registered vessel with a legal identity.</p>
+<h2>Detail</h2>
+<p>Not every decision was structural. A compass rose was designed as a marquetry inlay — eight points in alternating light and dark woods, cardinal letters around the rim, and coordinates engraved on the outer ring marking a specific place.</p>
+<p>It carries no load and saves no weight. It is there because a boat you designed and built yourself gets to have something on it that exists only because you wanted it there, and because the same CAD tool used to develop hull panels will just as happily lay out a veneer pattern.</p>
+<figure><img src="../assets/images/sailboat-compass-rose.jpg" alt="CAD render of the compass rose marquetry inlay" loading="lazy"><figcaption>Compass rose inlay, designed Feb 2019</figcaption></figure>
 <h2>Takeaways</h2>
 <ul>
-<li>Designing to a fixed, proven subsystem trades design freedom for eliminated risk — the sail plan needed no validation because someone else had already done it</li>
-<li>Comparing materials on stiffness-per-weight rather than strength, because the failure mode of a hull panel is deflection, not rupture</li>
-<li>Certification as a proxy for a property that cannot be inspected — the Lloyd's stamp is really a guarantee about voids you will never be able to see</li>
-<li>Building the tooling before the product: the work table's flatness set the accuracy limit for every panel made on it</li>
-<li>Changing a material's properties rather than fighting them — wetting plywood to bend it is cheaper than redesigning the deck around what dry plywood will tolerate</li>
-<li>Prototyping in cheap material before committing to expensive: the corner joint went through four stages, the spar was dry-fitted before glue, and the first rudder was carved from foam and thrown away. Mistakes were consistently arranged to happen where they cost nothing</li>
-<li>Prototype effort should scale with how many times a part repeats — four identical corners justify four rounds of prototyping in a way a one-off joint never would</li>
-<li>Iteration counts for more than a clean first pass: the hull that got built was the third one, and each attempt bought information the previous one could not</li>
-<li>A simulation is only as good as its material card — a correct modulus made the deflection results usable, while placeholder strength values made anything derived from stress meaningless</li>
-<li>Fixed overhead per work session is a schedule multiplier that never appears in an estimate built from task durations alone</li>
+<li><strong>A specification is only as good as the incoming inspection behind it.</strong> The plywood was ordered correctly and delivered wrong, and two hulls were built before anyone measured a ply. Verifying material against spec costs minutes; discovering the mismatch through a scrapped part costs the part.</li>
+<li><strong>Where weak material sits in a section matters as much as how much of it there is.</strong> The cross-grain core failed because a thicker core reaches further from the neutral axis into higher strain, not because there was more of it.</li>
+<li><strong>Choosing not to build something is a design decision.</strong> A safety factor of 1.7 on a component whose failure mode takes the whole rig down was reason enough to abandon a design I wanted and buy a proven one instead.</li>
+<li><strong>Align by assembly, not by measurement.</strong> Building the frame around loose pylons and letting it set their positions removes an entire class of tolerance stack-up that measuring each hull independently would have created.</li>
+<li><strong>Give loads a route or the structure will improvise one.</strong> The tie rod across the arch and the missing member between shroud anchor and pylon are the same principle — once seen working, once seen absent.</li>
+<li><strong>Distribute a forming load rather than concentrating it.</strong> Straps at one-foot spacing turn point loads into something near-uniform, and every hard spot avoided is a crack that never starts.</li>
+<li><strong>Change a material's properties rather than fighting them.</strong> Heat and moisture together soften plywood enough to accept a curve it would crack at cold — ten hours of forming became one.</li>
+<li><strong>Prototype in cheap material, and scale prototype effort to repetition.</strong> Four identical corners justify four rounds of prototyping in a way a one-off never would; the first rudder was foam and went in the bin.</li>
+<li><strong>A simulation is only as good as its material card.</strong> A correct modulus made the deflection results usable; placeholder strength values made anything derived from stress meaningless.</li>
+<li><strong>A scrapped assembly can be the cheapest source of proven parts, and a mass-produced design keeps the rest available.</strong> A $200 non-repairable boat supplied the sail plan, foils, hardware and trailer; the bent mast, missing boom and dead rigging were all replaceable from second-hand listings precisely because thousands of the same boat exist.</li>
+<li><strong>Fixed overhead per work session is a schedule multiplier</strong> that never appears in an estimate built from task durations alone.</li>
+<li><strong>Aesthetic decisions are allowed, but they should be labelled as such.</strong> The strip-planked deck was built because I wanted it to look good, and it is the one part of the boat that has failed in service.</li>
 </ul>
 </main>
 
