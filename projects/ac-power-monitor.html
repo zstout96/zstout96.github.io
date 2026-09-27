@@ -12,7 +12,7 @@
 <body>
 
 <header class="site-header">
-  <div class="site-header-inner">
+  <div class="site-header-inner shell">
     <a class="site-title" href="/">Stout Design Engineering</a>
     <nav class="site-nav">
       <a href="/">Home</a>
@@ -24,7 +24,14 @@
   </div>
 </header>
 
-<main>
+<main class="shell">
+  <div class="layout">
+    <aside class="rail">
+      <p class="rail-label">Contents</p>
+      <nav id="toc"></nav>
+    </aside>
+    <div class="content">
+
   <p class="eyebrow">Personal project</p>
   <h1 class="page-title">AC Power Monitor</h1>
   <p class="page-dek">A mains-powered, dual-channel energy monitor for an HVAC condenser unit — isolated metering hardware built to catch motor degradation before it becomes a failure.</p>
@@ -165,11 +172,17 @@
       <figcaption>Sheet 6 — the ADE7953 metering IC, voltage divider, and the optocoupler isolation stage</figcaption>
     </figure>
   </article>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
-  <a href="https://github.com/zstout96">github.com/zstout96</a>
+  <div class="shell">
+    <a href="https://github.com/zstout96">github.com/zstout96</a>
+  </div>
 </footer>
+
+<script src="../assets/js/site.js"></script>
 
 </body>
 </html>

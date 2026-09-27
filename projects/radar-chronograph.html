@@ -12,18 +12,26 @@
 <body>
 
 <header class="site-header">
-  <div class="site-header-inner">
+  <div class="site-header-inner shell">
     <a class="site-title" href="/">Stout Design Engineering</a>
     <nav class="site-nav">
       <a href="/">Home</a>
       <a href="/projects/radar-chronograph.html">Radar Chronograph</a>
+      <a href="/projects/ac-power-monitor.html">AC Power Monitor</a>
       <a href="/projects/sailboat-project.html">Sailboat Project</a>
       <a href="https://github.com/zstout96">GitHub</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main class="shell">
+  <div class="layout">
+    <aside class="rail">
+      <p class="rail-label">Contents</p>
+      <nav id="toc"></nav>
+    </aside>
+    <div class="content">
+
   <p class="eyebrow">Personal project</p>
   <h1 class="page-title">24 GHz Doppler Radar Chronograph</h1>
   <p class="page-dek">A self-directed RF engineering project: a 24 GHz Doppler radar built to measure projectile velocity, using integrated patch antenna arrays in place of external RF connectors.</p>
@@ -61,8 +69,7 @@
 A = π r²  with r = 2.85 mm  →  A = 25.5 mm²
 λ = 12.43 mm at 24.125 GHz
 
-σ ≈ 5.24 × 10⁻⁵ m² = −32.8 dBsm (flat base, idealized)
-dBsm = dB relative to 1 square meter</pre>
+σ ≈ 5.24 × 10⁻⁵ m² = −32.8 dBsm (flat base, idealized)</pre>
 
     <p>Most 5.56 ammunition has a boat-tail base rather than a flat one, which drops the RCS further — I used a conservative design value of <strong>−38 dBsm</strong> to make sure the link budget wasn't flattered by an overly optimistic target. For reference, a nose-on aspect would be roughly −42 dBsm, so working the base aspect is worth 4–9 dB over other viewing angles, which is part of why the sensor geometry is arranged the way it is.</p>
 
@@ -96,12 +103,12 @@ dBsm = dB relative to 1 square meter</pre>
         <pre class="diagram">          BOTTOM LAYER (antenna side)
    ┌───────────────────────────────────┐
    │  TX ARRAY (4×4)   RX ARRAY (4×4)  │
-   │  ┌──┬──┬──┬──┐    ┌──┬──┬──┬──┐   │
-   │  ├──┼──┼──┼──┤    ├──┼──┼──┼──┤   │
-   │  ├──┼──┼──┼──┤ ◄► ├──┼──┼──┼──┤   │
+   │  ┌──┬──┬──┬──┐   ┌──┬──┬──┬──┐   │
+   │  ├──┼──┼──┼──┤   ├──┼──┼──┼──┤   │
+   │  ├──┼──┼──┼──┤◄►├──┼──┼──┼──┤   │
    │  ├──┼──┼──┼──┤15mm├──┼──┼──┼──┤   │
-   │  └──┴──┴──┴──┘    └──┴──┴──┴──┘   │
-   │    25×25mm           25×25mm      │
+   │  └──┴──┴──┴──┘   └──┴──┴──┴──┘   │
+   │    25×25mm          25×25mm      │
    └───────────────────────────────────┘</pre>
       </figure>
     </div>
@@ -164,11 +171,17 @@ dBsm = dB relative to 1 square meter</pre>
       <li>Knowing when <em>not</em> to commit to fabrication — when a real open question could waste an expensive board run — is as much a part of the engineering as the design work itself</li>
     </ul>
   </article>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
-  <a href="https://github.com/zstout96">github.com/zstout96</a>
+  <div class="shell">
+    <a href="https://github.com/zstout96">github.com/zstout96</a>
+  </div>
 </footer>
+
+<script src="../assets/js/site.js"></script>
 
 </body>
 </html>
