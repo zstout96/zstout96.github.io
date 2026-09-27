@@ -12,7 +12,7 @@
 <body>
 
 <header class="site-header">
-  <div class="site-header-inner">
+  <div class="site-header-inner shell">
     <a class="site-title" href="/">Stout Design Engineering</a>
     <nav class="site-nav">
       <a href="/">Home</a>
@@ -24,30 +24,42 @@
   </div>
 </header>
 
-<main>
-  <p class="eyebrow">Personal engineering projects</p>
-  <h1 class="page-title">Stout Design Engineering</h1>
-  <p class="page-dek">A record of self-directed hardware and design projects — RF systems, electronics, and builds undertaken outside of day-to-day work.</p>
+<main class="shell">
+  <div class="home-head">
+    <p class="eyebrow">Personal engineering projects</p>
+    <h1 class="page-title">Stout Design Engineering</h1>
+    <p class="page-dek">A record of self-directed hardware and design projects — RF systems, electronics, and builds undertaken outside of day-to-day work.</p>
+  </div>
 
-  <ul class="project-list">
+  <ul class="project-grid">
     <li>
-      <a href="/projects/radar-chronograph.html">24 GHz Doppler Radar Chronograph</a>
+      <a href="/projects/radar-chronograph.html"><img class="thumb" src="assets/images/radar-chronograph-hero.png" alt="CAD render of the radar chronograph transceiver and antenna boards"></a>
+      <h2><a href="/projects/radar-chronograph.html">24 GHz Doppler Radar Chronograph</a></h2>
       <p>A 24 GHz Doppler radar to measure projectile velocity — RCS analysis, link budget, integrated patch antenna arrays, and PCB stackup design.</p>
+      <p class="meta">Antenna validation in progress</p>
     </li>
     <li>
-      <a href="/projects/ac-power-monitor.html">AC Power Monitor</a>
+      <a href="/projects/ac-power-monitor.html"><img class="thumb" src="assets/images/ac-power-monitor-top.png" alt="Render of the AC power monitor circuit board"></a>
+      <h2><a href="/projects/ac-power-monitor.html">AC Power Monitor</a></h2>
       <p>A mains-powered, isolated dual-channel energy monitor for an HVAC condenser unit, built to catch motor degradation before it becomes a failure.</p>
+      <p class="meta">Pre-fabrication review</p>
     </li>
     <li>
-      <a href="/projects/sailboat-project.html">Sailboat Project</a>
+      <a href="/projects/sailboat-project.html"><span class="thumb-none">Build photos coming soon</span></a>
+      <h2><a href="/projects/sailboat-project.html">Sailboat Project</a></h2>
       <p>A 16-foot catamaran sailboat, designed out of wood, using the Hobie 16 rigging.</p>
+      <p class="meta">Built 2018–2020</p>
     </li>
   </ul>
 </main>
 
 <footer class="site-footer">
-  <a href="https://github.com/zstout96">github.com/zstout96</a>
+  <div class="shell">
+    <a href="https://github.com/zstout96">github.com/zstout96</a>
+  </div>
 </footer>
+
+<script src="./assets/js/site.js"></script>
 
 </body>
 </html>
